@@ -1,0 +1,28 @@
+<section class="lab" data-lab aria-labelledby="explore-title">
+  <h2 id="explore-title">Compare os distritos</h2>
+  <div class="lab-controls" hidden>
+    <label>De<select id="start"></select></label><label>Até<select id="end"></select></label>
+    <label>Medida<select id="metric"><option value="count">Número de moradores</option><option value="percent">Variação percentual</option></select></label>
+    <label>Distrito<select id="district"></select></label>
+  </div>
+  <div class="lab-display">
+    <div class="lab-panel">
+      <h3>Variação populacional</h3><p class="readout" id="period-desc">2010–2022 · 50 distritos cresceram e 46 perderam moradores.</p>
+      <figure><svg id="ranking-svg" role="img" aria-label="Variação dos 96 distritos, em ordem decrescente" viewBox="0 0 590 235"></svg>
+      <figcaption class="readout" aria-live="polite" id="rank-readout"></figcaption></figure>
+    </div>
+    <div class="lab-panel">
+      <h3 id="chosen-name">Bela Vista</h3><p class="stats" id="chosen-delta">−9.436 moradores</p><p class="readout" id="chosen-details">69.460 em 2010 · 60.024 em 2022.</p>
+      <figure class="labtrends"><figcaption class="help" id="trend-label">População de Bela Vista, 1950 a 2022</figcaption>
+      <svg id="trend-svg" viewBox="0 0 360 134" role="img" aria-labelledby="trend-label"></svg></figure>
+    </div>
+  </div>
+  <details><summary>Ver os 96 distritos em tabela</summary><div class="table-scroll"><table><thead><tr><th scope="col">Distrito</th><th scope="col" id="head-start">2010</th><th scope="col" id="head-end">2022</th><th scope="col">Variação</th></tr></thead><tbody></tbody></table></div></details>
+</section>
+<section class="paper methods"><h2>O que muda com a medida?</h2>
+<p>De 2010 a 2022, Vila Andrade passou de 127.015 para 168.669 moradores. O ganho de 41.654 pessoas foi o maior da cidade. Em termos proporcionais, a Barra Funda liderou. Com uma população inicial de 14.383, o distrito cresceu 132,5% e chegou a 33.436 moradores.</p>
+<p>Na Bela Vista, que inspirou o <a href="../../artigos/banksy-sao-paulo-e-a-bela-vista/">mapa de densidade de 2014</a>, a população caiu 13,6%. A contagem mostra quantas pessoas residiam no distrito em cada censo. Explicar a queda exige dados sobre nascimentos, mortes, migração e mudanças de moradia.</p>
+<h2>Dados e método</h2>
+<p>O gráfico usa a série da Prefeitura de São Paulo para os 96 distritos. A variação percentual divide a diferença entre as duas contagens pela população do primeiro ano. Os intervalos entre censos têm durações diferentes e as taxas exibidas são acumuladas no período.</p>
+<p>Para 1950–1980, a Prefeitura recompôs retrospectivamente os limites distritais. De 1991 a 2010, agregou os setores censitários. Os valores de 2022 usam os agregados preliminares da versão publicada pela Prefeitura. As somas dos distritos reproduzem os totais municipais publicados para 2010 e 2022.</p>
+<div class="linkline"><a href="https://drive.prefeitura.sp.gov.br/cidade/secretarias/upload/chamadas/314_01_censo_r5-sub-distr_pop-abs_1950-2022_final_1715805085.htm">Tabela original · SMUL/GEOINFO e IBGE</a><a href="../../data/populacao/distritos.csv" download>Baixar os dados (CSV)</a><a href="https://github.com/murilofm/data-for-thoughts/blob/main/data/populacao/atualizar.py">Código de extração</a></div></section>
