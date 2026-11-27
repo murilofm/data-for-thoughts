@@ -3,7 +3,7 @@
   "date": "2026-11-27",
   "title": "Onde São Paulo cresceu?",
   "topic": "Demografia",
-  "summary": "São Paulo ganhou 198.496 moradores entre 2010 e 2022. Explore os oito censos para ver quando e onde os distritos ganharam ou perderam população.",
+  "summary": "O mapa em estêncil revela onde os paulistanos se concentravam em 2010. Nos gráficos abaixo, acompanhe como a população dos 96 distritos mudou de 1950 a 2022.",
   "body": "lab.html",
   "script": "populacao.js"
 }

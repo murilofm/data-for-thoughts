@@ -3,3 +3,53 @@
 @media(max-width:760px){.wrap{width:calc(100% - 36px)}.mast .wrap{min-height:60px}.brand{font-size:1.13rem}.brand svg{width:26px;height:26px}.nav{gap:.9rem}.nav a{font-size:.84rem}.nav a:last-child{padding-left:.9rem}.front-title{padding:25px 0 15px;display:block}.front-title p{margin-top:8px}.feature,.lab-display{grid-template-columns:1fr}.feature{padding:24px 0;gap:22px}.feature h2{font-size:3.1rem}.feature .cta{margin-top:15px}.feature-figure{padding:16px}.archive-year{display:block}.archive-year h3{margin-bottom:8px}.entry{grid-template-columns:5.5rem 1fr;gap:.6rem}.entry time{font-size:.77rem}.filters select,.filters input{max-width:100%}.article-head{padding-top:22px}.lab-panel{padding:14px}.source-copy{font-size:1.07rem}.research{overflow-x:auto}.foot{margin-top:28px}}
 @media(max-width:380px){.nav{gap:.5rem}.nav a:last-child{padding-left:.5rem}.wrap{width:calc(100% - 26px)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* The São Paulo study opens as a two-page spread, with the census map on the right. */
+.article:has(> .stencil) {
+  display: grid;
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  column-gap: clamp(24px, 5vw, 76px);
+}
+.article:has(> .stencil) > :is(.back, .lab, .methods) { grid-column: 1 / -1; }
+.article:has(> .stencil) > .article-head { align-self: center; padding: 1rem 0 2rem; }
+.stencil {
+  min-width: 0;
+  margin: 1.2rem 0 2.5rem;
+  color: #191b19;
+  background: #fff;
+  border-block: 2px solid currentColor;
+}
+.stencil-heading, .stencil-caption { padding: .85rem clamp(14px, 2vw, 24px); }
+.stencil-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: .25rem 1rem;
+  border-bottom: 1px solid #d7dad4;
+}
+.stencil-heading h2 { font: normal clamp(1.55rem, 2.8vw, 2.4rem)/1.1 var(--serif); letter-spacing: -.04em; }
+.stencil-heading span { font: .78rem var(--mono); }
+.stencil-stage { height: clamp(340px, 55vh, 540px); }
+.stencil-stage > * { width: 100%; height: 100%; display: block; object-fit: contain; }
+.stencil-stage img { object-fit: cover; }
+.stencil-caption { border-top: 1px solid #d7dad4; }
+.stencil-control {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: baseline;
+  gap: .15rem .5rem;
+}
+.stencil-control label { font: 600 .9rem var(--sans); }
+.stencil-control output { font: 600 .95rem var(--mono); font-variant-numeric: tabular-nums; }
+.stencil-control input { grid-column: 1 / -1; width: 100%; height: 26px; margin: 0; }
+.stencil-caption p { color: var(--dim); font-size: .83rem; line-height: 1.45; }
+@media (max-width: 760px) {
+  .article:has(> .stencil) { display: block; padding-top: .8rem; }
+  .article:has(> .stencil) > .article-head { padding: .8rem 0 0; }
+  .article:has(> .stencil) .article-head h1 { margin: .4rem 0 .55rem; font-size: clamp(2rem, 7.5vw, 3rem); }
+  .article:has(> .stencil) .article-head .dek { font-size: .96rem; }
+  .article:has(> .stencil) .article-head .meta { margin-top: .55rem; }
+  .stencil { margin: 1rem 0 1.75rem; }
+  .stencil-stage { height: clamp(275px, 43vh, 400px); }
+}
