@@ -1,0 +1,6 @@
+{
+  "topic": "Eleições",
+  "summary": "Uma leitura quantitativa da fala dos candidatos no debate de 18 de outubro de 2012.",
+  "figure": "debate-band",
+  "scope": "A reconstrução conta palavras na transcrição da Folha por candidato e bloco. A contagem depende das regras de tokenização."
+}

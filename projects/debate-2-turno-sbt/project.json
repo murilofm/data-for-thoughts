@@ -1,0 +1,6 @@
+{
+  "topic": "Eleições",
+  "summary": "As palavras dos candidatos no segundo debate do segundo turno da eleição paulistana de 2012.",
+  "figure": "debate-sbt",
+  "scope": "A reconstrução conta palavras na transcrição da Folha por candidato e bloco. A contagem depende das regras de tokenização."
+}

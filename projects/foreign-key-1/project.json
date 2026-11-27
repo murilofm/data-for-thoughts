@@ -1,0 +1,9 @@
+{
+  "topic": "Referências",
+  "summary": "A primeira indicação da série Foreign Key apresenta uma visualização de obras do PAC.",
+  "reading": [
+    "Código do PAC Info",
+    "O repositório dos autores conserva a implementação da ferramenta apresentada no blog em 2014.",
+    "https://github.com/brianstorti/pac-info"
+  ]
+}

@@ -1,0 +1,41 @@
+name: Publicar subprojetos
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'projects/**'
+      - 'data/**'
+      - 'assets/**'
+      - 'templates/**'
+      - 'tools/build.py'
+      - 'tools/verify.py'
+      - '.github/workflows/publicar.yml'
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  gerar:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    concurrency:
+      group: publicar-${{ github.ref }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/build.py
+      - run: python3 tools/verify.py
+      - name: Verificar a sintaxe dos módulos
+        run: find assets projects data -name '*.js' -print0 | xargs -0 -r -n1 node --check
+      - name: Atualizar as páginas públicas
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html projects
+          if ! git diff --cached --quiet; then
+            git commit -m "Build the public pages and per-project documentation"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
