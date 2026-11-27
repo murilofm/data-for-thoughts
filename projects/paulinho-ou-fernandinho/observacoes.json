@@ -1,0 +1,130 @@
+{
+  "date": "2014-06-23",
+  "match": "Brasil 4 × 1 Camarões",
+  "venue": "Estádio Nacional Mané Garrincha, Brasília",
+  "players": [
+    "Paulinho",
+    "Fernandinho"
+  ],
+  "halves": [
+    "1º tempo",
+    "2º tempo"
+  ],
+  "period": "Um tempo regulamentar por jogador. A comparação usa os totais divulgados para a partida.",
+  "sources": {
+    "folha": {
+      "name": "Paulo Vinícius Coelho, Folha de S.Paulo, 25/06/2014",
+      "url": "https://feeds.folha.uol.com.br/fsp/esporte/172849-fernandinho-se-infiltra-como-paulinho-mas-rouba-mais-bolas.shtml"
+    },
+    "uol": {
+      "name": "UOL, 23/06/2014",
+      "url": "https://copadomundo.uol.com.br/noticias/redacao/2014/06/23/fernandinho-atropela-paulinho-mais-passes-desarmes-rapidez-e-eficiencia.htm"
+    },
+    "post": {
+      "name": "Data for thoughts, 26/06/2014",
+      "url": "https://dataforthoughts.wordpress.com/2014/06/26/paulinho-ou-fernandinho/"
+    },
+    "huff": {
+      "name": "HuffPost, relatório da partida",
+      "url": "https://data.huffingtonpost.com/2014/world-cup/matches/cameroon-vs-brazil-731799"
+    }
+  },
+  "images": [
+    {
+      "name": "Mapa estático dos passes e do percentual de acerto",
+      "url": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/06/fernandinho_paulinho_v3.png",
+      "file": "media/8022823c-fernandinho_paulinho_v3.png"
+    },
+    {
+      "name": "Sobreposição animada dos passes",
+      "url": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/06/fernandinho_paulinho_v3_dyn.gif",
+      "file": "media/99f1a407-fernandinho_paulinho_v3_dyn.gif"
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Acerto dos passes",
+      "unit": "%",
+      "values": [
+        83,
+        96
+      ],
+      "source": "post",
+      "detail": "Percentuais impressos no infográfico de 2014. O autor usou a visualização do HuffPost. O trecho em azul-petróleo marca o gol de Fernandinho aos 84 minutos e tem cor própria."
+    },
+    {
+      "label": "Passes certos",
+      "unit": "passes",
+      "values": [
+        8,
+        20
+      ],
+      "source": "folha",
+      "detail": "PVC registrou seis passes curtos de Paulinho no campo de defesa e 13 passes certos de Fernandinho no campo de ataque."
+    },
+    {
+      "label": "Passes registrados",
+      "unit": "passes",
+      "values": [
+        9,
+        21
+      ],
+      "source": "uol",
+      "detail": "Contagem de passes informada pelo UOL. Os veículos podem usar critérios diferentes. As duas contagens não foram combinadas para calcular um percentual."
+    },
+    {
+      "label": "Desarmes",
+      "unit": "desarmes",
+      "values": [
+        1,
+        2
+      ],
+      "source": "uol",
+      "detail": "As duas atuações ocorreram em momentos e placares diferentes da partida."
+    },
+    {
+      "label": "Bolas recuperadas",
+      "unit": "recuperações",
+      "values": [
+        1,
+        1
+      ],
+      "source": "uol",
+      "detail": "O UOL separa bolas recuperadas de desarmes."
+    },
+    {
+      "label": "Distância percorrida",
+      "unit": "km",
+      "values": [
+        5.7,
+        4.7
+      ],
+      "source": "uol",
+      "detail": "Distância total percorrida durante a atuação de cada jogador."
+    },
+    {
+      "label": "Velocidade máxima",
+      "unit": "km/h",
+      "values": [
+        25.9,
+        28.9
+      ],
+      "source": "uol",
+      "detail": "Maior velocidade registrada na partida para cada jogador."
+    }
+  ],
+  "frames": [
+    {
+      "name": "Os dois jogadores",
+      "file": "mapas/ambos.gif"
+    },
+    {
+      "name": "Paulinho",
+      "file": "mapas/paulinho.gif"
+    },
+    {
+      "name": "Fernandinho",
+      "file": "mapas/fernandinho.gif"
+    }
+  ]
+}

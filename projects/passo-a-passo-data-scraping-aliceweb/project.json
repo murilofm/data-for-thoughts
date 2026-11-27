@@ -1,5 +1,7 @@
 {
   "topic": "Economia",
   "summary": "O que era preciso fazer para extrair os dados brasileiros de comércio exterior e como consultar a série hoje.",
-  "figure": "comex"
+  "figure": "comex",
+  "edition": "Tutorial e consulta reconstruídos",
+  "scope": "As seis observações visíveis no AliceWeb aparecem separadas da nova consulta da unidade aduaneira de Santos no Comex Stat."
 }

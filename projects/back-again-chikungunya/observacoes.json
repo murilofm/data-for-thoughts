@@ -1,0 +1,51 @@
+{
+  "source": "https://dataforthoughts.wordpress.com/2016/09/02/back-again-chikungunya/",
+  "publication": "2016-09-02",
+  "month": "2016-05",
+  "n": 1,
+  "method": "Marcos relatados pelo autor. A posição de cada item na lista indica a sequência, com a precisão temporal disponível no texto.",
+  "events": [
+    {
+      "when": "Início dos sintomas",
+      "phase": "Aguda",
+      "label": "Febre e dores no corpo",
+      "detail": "O autor acordou de madrugada em Itacaré com temperatura de 38,5 °C. Lembrava também de uma dor na mão direita, inicialmente atribuída ao surfe."
+    },
+    {
+      "when": "Cerca de 4 horas depois",
+      "phase": "Aguda",
+      "label": "Temperatura chegou a 39 °C",
+      "detail": "Depois de voltar a dormir, o autor observou a nova temperatura."
+    },
+    {
+      "when": "Até o segundo dia",
+      "phase": "Aguda",
+      "label": "Febre cedeu",
+      "detail": "A febre já havia desaparecido quando voltou a São Paulo. A dor persistia. O relato registra resultado positivo nos exames."
+    },
+    {
+      "when": "Nos primeiros dias",
+      "phase": "Aguda",
+      "label": "Alteração do paladar e coceira",
+      "detail": "A coceira prejudicou o sono por duas noites. O texto descreve fadiga e redução do apetite, sem datas individuais para esses sintomas."
+    },
+    {
+      "when": "Cerca de 10 dias",
+      "phase": "Aguda",
+      "label": "Fim da fase aguda no relato",
+      "detail": "O autor marcou essa transição pelo desaparecimento da alteração do paladar, das manchas e da febre. Dor e cansaço continuaram."
+    },
+    {
+      "when": "Meses seguintes",
+      "phase": "Subaguda",
+      "label": "Dor persistente no pé, na mão e na lombar",
+      "detail": "O autor descreveu a fase subaguda com duração de três a quatro meses. A retomada das atividades foi parcial."
+    },
+    {
+      "when": "2 de setembro de 2016",
+      "phase": "Em aberto",
+      "label": "Último ponto do relato publicado",
+      "detail": "O autor ainda tinha dúvidas sobre a transição para uma fase crônica. A data de recuperação ficou em aberto."
+    }
+  ]
+}

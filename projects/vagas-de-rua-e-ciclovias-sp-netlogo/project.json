@@ -4,5 +4,7 @@
   "figure": "ciclovias",
   "links": {
     "https://dl.dropboxusercontent.com/u/38380383/vagas.html": "#figura"
-  }
+  },
+  "edition": "Modelo reconstruído",
+  "scope": "O executável histórico do NetLogo saiu do ar. O novo simulador explicita suas regras e permite comparar cenários com as mesmas chegadas."
 }

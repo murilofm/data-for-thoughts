@@ -1,5 +1,7 @@
 {
   "topic": "Mobilidade",
   "summary": "Como os atrasos se distribuíam entre aeroportos brasileiros ao longo do dia?",
-  "figure": "aeroportos"
+  "figure": "aeroportos",
+  "edition": "Boletins históricos recuperados",
+  "scope": "A série contém 284 boletins horários da Infraero e 12.846 registros de aeroportos."
 }

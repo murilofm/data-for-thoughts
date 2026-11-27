@@ -1,5 +1,7 @@
 {
   "topic": "Futebol",
   "summary": "Os passes de dois volantes brasileiros na partida contra Camarões, na Copa de 2014.",
-  "figure": "passes"
+  "figure": "passes",
+  "edition": "Mapas de passes originais recuperados",
+  "scope": "Os quadros do GIF publicado em 2014 permitem alternar os passes de cada jogador e a sobreposição."
 }

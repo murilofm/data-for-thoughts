@@ -1,0 +1,9 @@
+{
+  "kind": "study",
+  "date": "2026-11-27",
+  "title": "Onde São Paulo cresceu?",
+  "topic": "Demografia",
+  "summary": "São Paulo ganhou 198.496 moradores entre 2010 e 2022. Explore os oito censos para ver quando e onde os distritos ganharam ou perderam população.",
+  "body": "lab.html",
+  "script": "populacao.js"
+}

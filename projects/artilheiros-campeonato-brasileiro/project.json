@@ -1,5 +1,7 @@
 {
   "topic": "Futebol",
   "summary": "Compare o perfil dos principais goleadores do Brasileirão de 2010, 2011 e parte de 2012.",
-  "figure": "artilheiros"
+  "figure": "artilheiros",
+  "edition": "Heatmap reconstruído da figura",
+  "scope": "O infográfico publicou níveis de cor. As 144 células recuperam esses níveis e os campos ausentes; os valores brutos das nove métricas não foram publicados."
 }

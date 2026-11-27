@@ -4,5 +4,7 @@
   "figure": "rodovias",
   "links": {
     "https://googledrive.com/host/0B1nuI_FiZnnlVkl3RFMwNVNpQWM/myMap_f.html": "#figura"
-  }
+  },
+  "edition": "Dados do mapa original recuperados",
+  "scope": "A camada recuperada reúne os trechos acima de 14 acidentes por quilômetro. A figura histórica abaixo também mostra o mapa geral."
 }

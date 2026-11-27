@@ -1,5 +1,7 @@
 {
   "topic": "Saúde",
   "summary": "Um diário pessoal de 2016 acompanha a evolução dos sintomas ao longo do tempo.",
-  "figure": "relato"
+  "figure": "relato",
+  "edition": "Relato pessoal com gráfico recuperado",
+  "scope": "O gráfico reproduz a forma das curvas desenhadas pelo autor. A escala vertical é qualitativa. Os pontos digitalizados descrevem o traçado de uma pessoa."
 }

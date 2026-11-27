@@ -108,6 +108,31 @@ Na raiz do repositório, execute `python3 -m http.server 8000` e abra `http://lo
 '''
 
 
+def new_studies(template):
+    result = []
+    for manifest in sorted(PROJECTS.glob("*/project.json")):
+        conf = json.loads(read(manifest))
+        if conf.get("kind") != "study":
+            continue
+        folder = manifest.parent
+        body_path = folder / conf["body"]
+        if body_path.resolve().parent != folder.resolve():
+            raise ValueError(f"Corpo fora do subprojeto: {body_path}")
+        title, summary = escape(conf["title"]), escape(conf["summary"])
+        body = f'''<article class="article"><a class="back" href="../../">Página inicial</a><header class="article-head">
+<p class="kind">{escape(conf["topic"])} &nbsp; / &nbsp; Estudo novo</p><h1>{title}</h1><p class="dek">{summary}</p>
+<p class="meta"><time datetime="{conf["date"]}">{date_label(conf["date"])}</time> &nbsp;·&nbsp; <a href="{REPO}/tree/main/projects/{folder.name}">Subprojeto no GitHub</a></p></header>{read(body_path)}</article>'''
+        html = template.replace("<!-- TITLE -->", title).replace("<!-- DESCRIPTION -->", summary).replace("<!-- BODY -->", body)
+        if conf.get("script"):
+            script = folder / conf["script"]
+            if not script.is_file() or script.resolve().parent != folder.resolve():
+                raise ValueError(script)
+            html = html.replace("../../assets/article.js", "./" + escape(script.name,quote=True))
+        write(folder/"index.html",html)
+        result.append((folder.name, conf))
+    return sorted(result, key=lambda item:item[1]["date"], reverse=True)
+
+
 def main():
     data = []
     for path in sorted(PROJECTS.glob("*/post.json")):
@@ -129,10 +154,11 @@ def main():
     data.sort(key=lambda row: (row[1]["date"],row[1]["id"]), reverse=True)
     slugs = {p["slug"] for _, p, _, _, _ in data}
     template = read(ROOT/"templates/article.html")
+    studies = new_studies(template)
     years = defaultdict(list)
     index = ["# Subprojetos", "", "Cada publicação tem sua própria página, fontes e arquivos de análise.", "",
              "| Publicação | Subprojeto | Edição publicada |", "| --- | --- | --- |",
-             "| 2026-11-27 | [Onde São Paulo cresceu?](sao-paulo-distritos/) | Estudo novo · oito censos, 96 distritos |"]
+             *[f'| {info["date"]} | [{info["title"]}]({slug}/) | Estudo novo · {info["topic"]} |' for slug, info in studies]]
     for folder, post, conf, has_figure, edition in data:
         slug = post["slug"]
         write(folder/"index.html",article(post,conf,has_figure,slugs,template))
@@ -143,7 +169,12 @@ def main():
         title = post["title"].replace("|","–")
         index.append(f'| {post["date"][:10]} | [{title}]({slug}/) | {edition} |')
     sections = [f'<section class="archive-year"><h3>{year}</h3><ul class="entries">{"".join(entries)}</ul></section>' for year,entries in years.items()]
-    write(ROOT/"index.html", read(ROOT/"templates/home.html").replace("<!-- POSTS -->","\n".join(sections)))
+    home = read(ROOT/"templates/home.html").replace("<!-- POSTS -->","\n".join(sections))
+    additional = [(slug,info) for slug,info in studies if slug != "sao-paulo-distritos"]
+    if additional:
+        links = "".join(f'<li><a href="projects/{slug}/">{escape(info["title"])}</a></li>' for slug,info in additional)
+        home = home.replace('<section id="arquivo"', '<section class="paper"><h2>Mais estudos</h2><ul>'+links+'</ul></section><section id="arquivo"')
+    write(ROOT/"index.html", home)
     write(PROJECTS/"README.md","\n".join(index))
     print(f"{len(data)} páginas históricas, {sum(row[3] for row in data)} com módulos interativos.")
 
