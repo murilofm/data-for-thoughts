@@ -1,0 +1,31 @@
+name: Recuperar a série mensal do comércio exterior
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'projects/passo-a-passo-data-scraping-aliceweb/comex.py'
+      - '.github/workflows/comex.yml'
+permissions:
+  contents: write
+jobs:
+  comercio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - name: Consultar Comex Stat e validar os meses
+        working-directory: projects/passo-a-passo-data-scraping-aliceweb
+        run: |
+          python comex.py > "$RUNNER_TEMP/soja.csv"
+          cp "$RUNNER_TEMP/soja.csv" comex.csv
+      - name: Publicar a série derivada
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add projects/passo-a-passo-data-scraping-aliceweb/comex.csv
+          if ! git diff --cached --quiet; then
+            git commit -m "Rebuild the historical monthly Santos customs series from MDIC"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

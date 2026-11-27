@@ -1,0 +1,494 @@
+    <div id="base" style="text-align: left; width: 508px;">
+        <span style="font-size: 10pt; color: black; font-family: Verdana; mso-bidi-font-size: 12.0pt">
+            &nbsp;DATA:
+            <span id="TxtData">29/11/2013</span>
+            <span id="TxtSemana">sexta-feira</span>&nbsp; (<span id="TxtPeriodo"> 15:00h</span>)<br />
+            &nbsp;&nbsp;<br />
+        </span>
+        <br />
+        <div>
+	<table cellspacing="1" cellpadding="4" id="GridVoos" height="158" width="512">
+		<tr align="center" valign="middle" bgcolor="#5D7B9D">
+			<th scope="col"><font color="White" size="1"><b>PROGRAMADOS</b></font></th><th scope="col"><font color="White" size="1"><b>N&#186; VOOS</b></font></th><th scope="col"><font color="White" size="1"><b>ATRASADOS (%)</b></font></th><th scope="col"><font color="White" size="1"><b>ATRASADOS NO MOMENTO (%)</b></font></th><th scope="col"><font color="White" size="1"><b>CANCELADOS  (%)</b></font></th>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">TOTAIS</font></td><td><font color="#333333" size="1">1541</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_0">97</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_0">12</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_0">49</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Altamira-PA</font></td><td><font color="#284775" size="1">6</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_1">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_1">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_1">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Aracaju-SE</font></td><td><font color="#333333" size="1">15</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_2">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_2">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_2">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Bel&#233;m-PA</font></td><td><font color="#284775" size="1">41</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_3">4</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_3">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_3">2</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Belo Horizonte - Pampulha-MG</font></td><td><font color="#333333" size="1">20</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_4">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_4">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_4">4</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Belo Horizonte - T.Neves-MG</font></td><td><font color="#284775" size="1">82</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_5">7</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_5">1</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_5">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Boa Vista-RR</font></td><td><font color="#333333" size="1">6</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_6">1</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_6">1</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_6">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Bras&#237;lia-DF</font></td><td><font color="#284775" size="1">105</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_7">21</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_7">2</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_7">3</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Campina Grande-PB</font></td><td><font color="#333333" size="1">2</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_8">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_8">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_8">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Campinas-SP</font></td><td><font color="#284775" size="1">101</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_9">5</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_9">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_9">3</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Campo Grande-MS</font></td><td><font color="#333333" size="1">21</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_10">2</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_10">1</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_10">2</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Campos dos Goytacazes-RJ</font></td><td><font color="#284775" size="1">1</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_11">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_11">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_11">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Caraj&#225;s-PA</font></td><td><font color="#333333" size="1">3</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_12">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_12">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_12">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Crici&#250;ma-SC</font></td><td><font color="#284775" size="1">1</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_13">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_13">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_13">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Cruzeiro Do Sul-AC</font></td><td><font color="#333333" size="1">1</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_14">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_14">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_14">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Cuiab&#225;-MT</font></td><td><font color="#284775" size="1">30</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_15">1</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_15">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_15">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Curitiba-PR</font></td><td><font color="#333333" size="1">64</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_16">1</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_16">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_16">3</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Florian&#243;polis-SC</font></td><td><font color="#284775" size="1">27</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_17">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_17">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_17">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Fortaleza-CE</font></td><td><font color="#333333" size="1">42</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_18">3</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_18">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_18">2</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Foz Do Igua&#231;u-PR</font></td><td><font color="#284775" size="1">12</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_19">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_19">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_19">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Goi&#226;nia-GO</font></td><td><font color="#333333" size="1">29</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_20">1</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_20">1</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_20">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Ilh&#233;us-BA</font></td><td><font color="#284775" size="1">6</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_21">5</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_21">1</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_21">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Imperatriz-MA</font></td><td><font color="#333333" size="1">3</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_22">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_22">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_22">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Joao Pessoa-PB</font></td><td><font color="#284775" size="1">12</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_23">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_23">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_23">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Joinville-SC</font></td><td><font color="#333333" size="1">6</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_24">1</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_24">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_24">4</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Juazeiro Do Norte-CE</font></td><td><font color="#284775" size="1">5</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_25">1</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_25">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_25">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Londrina-PR</font></td><td><font color="#333333" size="1">13</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_26">1</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_26">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_26">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Maca&#233;-RJ</font></td><td><font color="#284775" size="1">2</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_27">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_27">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_27">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Macap&#225;-AP</font></td><td><font color="#333333" size="1">6</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_28">1</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_28">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_28">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Macei&#243;-AL</font></td><td><font color="#284775" size="1">17</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_29">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_29">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_29">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Manaus-AM</font></td><td><font color="#333333" size="1">38</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_30">5</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_30">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_30">1</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Marab&#225;-PA</font></td><td><font color="#284775" size="1">14</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_31">1</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_31">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_31">1</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Montes Claros-MG</font></td><td><font color="#333333" size="1">5</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_32">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_32">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_32">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Natal-RN</font></td><td><font color="#284775" size="1">22</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_33">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_33">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_33">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Navegantes-SC</font></td><td><font color="#333333" size="1">15</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_34">1</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_34">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_34">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Palmas-TO</font></td><td><font color="#284775" size="1">9</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_35">1</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_35">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_35">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Pelotas-RS</font></td><td><font color="#333333" size="1">2</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_36">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_36">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_36">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Petrolina-PE</font></td><td><font color="#284775" size="1">5</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_37">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_37">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_37">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Porto Alegre-RS</font></td><td><font color="#333333" size="1">61</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_38">2</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_38">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_38">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Porto Velho - RO</font></td><td><font color="#284775" size="1">11</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_39">1</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_39">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_39">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Recife-PE</font></td><td><font color="#333333" size="1">54</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_40">4</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_40">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_40">11</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Rio Branco-AC</font></td><td><font color="#284775" size="1">5</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_41">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_41">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_41">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Rio de Janeiro - Galeao-RJ</font></td><td><font color="#333333" size="1">81</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_42">4</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_42">1</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_42">6</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Rio de Janeiro - S.Dumont-RJ</font></td><td><font color="#284775" size="1">92</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_43">2</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_43">1</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_43">1</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Salvador-BA</font></td><td><font color="#333333" size="1">73</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_44">4</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_44">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_44">1</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Santar&#233;m-PA</font></td><td><font color="#284775" size="1">9</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_45">1</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_45">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_45">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Sao Jos&#233; dos Campos-SP</font></td><td><font color="#333333" size="1">1</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_46">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_46">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_46">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Sao Luis-MA</font></td><td><font color="#284775" size="1">21</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_47">1</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_47">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_47">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Sao Paulo - Congonhas-SP</font></td><td><font color="#333333" size="1">137</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_48">1</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_48">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_48">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Sao Paulo - Guarulhos-SP</font></td><td><font color="#284775" size="1">151</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_49">12</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_49">3</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_49">2</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Teresina-PI</font></td><td><font color="#333333" size="1">10</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_50">1</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_50">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_50">0</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Uberaba-MG</font></td><td><font color="#284775" size="1">5</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_51">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_51">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_51">1</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="#F7F6F3">
+			<td><font color="#333333" size="1">Uberl&#226;ndia-MG</font></td><td><font color="#333333" size="1">13</font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_52">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_ATR_52">0</span>
+                    </font></td><td><font color="#333333" size="1">
+                        <span id="GridVoos_CANC_52">1</span>
+                    </font></td>
+		</tr><tr align="center" bgcolor="LightGrey">
+			<td><font color="#284775" size="1">Vit&#243;ria-ES</font></td><td><font color="#284775" size="1">28</font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_53">1</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_ATR_53">0</span>
+                    </font></td><td><font color="#284775" size="1">
+                        <span id="GridVoos_CANC_53">1</span>
+                    </font></td>
+		</tr>
+	</table>
+</div>
+        <br/>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+        <br/><br/>
+        <br/>
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp;&nbsp;<p style="text-align: left" class="titulo">
+                &nbsp; &nbsp;&nbsp; LEGENDA:<br />
+            </p>
+        <ul>
+            <li class="titulo" style="text-align: left">PROGRAMADOS<br />
+                <span style="font-size: 8pt">Total de vôos previstos entre
+                    <span id="TxtPeriodo1">00:00h</span>
+                    e
+                    <span id="TxtPeriodo2">15:00h</span>. </span>
+            </li>
+        </ul>
+        <ul>
+        <li style="text-align: left" class="titulo">
+            ATRASADOS <br />
+            <span style="font-size: 8pt">Total de vôos que atrasaram entre
+                <span id="TxtPeriodo3">00:00h</span>
+                e
+                <span id="TxtPeriodo4">15:00h</span>.
+            </span></li>
+        </ul>
+        <ul>
+        <li style="text-align: left" class="titulo">
+            ATRASADOS NO MOMENTO<br />
+            <span style="font-size: 8pt">Total de vôos que atrasaram entre
+                <span id="TxtPeriodoInicioMomento">14:00h</span>
+                e
+                <span id="TxtPeriodoFimMomento">15:00h</span>.
+            </span></li>
+        </ul>        
+        <ul>
+        <li style="text-align: left" class="titulo">
+            CANCELADOS <br />
+            <span style="font-size: 8pt">Total de vôos cancelados entre
+                <span id="TxtPeriodo5">00:00h</span>
+                e
+                <span id="TxtPeriodo6">15:00h</span>.
+            </span></li>
+        </ul>
+        <p style="text-align: left">
+            &nbsp; &nbsp; &nbsp; &nbsp;</p>
+        <br />
+    </div>

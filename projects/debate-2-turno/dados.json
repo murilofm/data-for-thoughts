@@ -60,7 +60,16 @@
           0,
           0,
           0
-        ]
+        ],
+        "lexicon": {
+          "singular": 1,
+          "plural": 0,
+          "negativo": 3,
+          "positivo": 3,
+          "passado": 0,
+          "presente": 4,
+          "futuro": 0
+        }
       },
       "Serra": {
         "turns": 1,
@@ -90,7 +99,16 @@
           0,
           0,
           1
-        ]
+        ],
+        "lexicon": {
+          "singular": 5,
+          "plural": 2,
+          "negativo": 0,
+          "positivo": 4,
+          "passado": 3,
+          "presente": 10,
+          "futuro": 0
+        }
       }
     },
     {
@@ -123,7 +141,16 @@
           0,
           8,
           0
-        ]
+        ],
+        "lexicon": {
+          "singular": 16,
+          "plural": 14,
+          "negativo": 52,
+          "positivo": 9,
+          "passado": 18,
+          "presente": 44,
+          "futuro": 3
+        }
       },
       "Serra": {
         "turns": 8,
@@ -153,7 +180,16 @@
           2,
           0,
           1
-        ]
+        ],
+        "lexicon": {
+          "singular": 31,
+          "plural": 10,
+          "negativo": 44,
+          "positivo": 32,
+          "passado": 46,
+          "presente": 53,
+          "futuro": 0
+        }
       }
     },
     {
@@ -186,7 +222,16 @@
           0,
           10,
           0
-        ]
+        ],
+        "lexicon": {
+          "singular": 28,
+          "plural": 11,
+          "negativo": 46,
+          "positivo": 14,
+          "passado": 13,
+          "presente": 64,
+          "futuro": 2
+        }
       },
       "Serra": {
         "turns": 8,
@@ -216,7 +261,16 @@
           0,
           0,
           3
-        ]
+        ],
+        "lexicon": {
+          "singular": 19,
+          "plural": 13,
+          "negativo": 27,
+          "positivo": 18,
+          "passado": 27,
+          "presente": 70,
+          "futuro": 0
+        }
       }
     },
     {
@@ -249,7 +303,16 @@
           1,
           4,
           0
-        ]
+        ],
+        "lexicon": {
+          "singular": 13,
+          "plural": 1,
+          "negativo": 16,
+          "positivo": 16,
+          "passado": 11,
+          "presente": 20,
+          "futuro": 0
+        }
       },
       "Serra": {
         "turns": 4,
@@ -279,7 +342,16 @@
           0,
           0,
           1
-        ]
+        ],
+        "lexicon": {
+          "singular": 10,
+          "plural": 5,
+          "negativo": 33,
+          "positivo": 14,
+          "passado": 24,
+          "presente": 28,
+          "futuro": 0
+        }
       }
     },
     {
@@ -312,7 +384,16 @@
           1,
           1,
           0
-        ]
+        ],
+        "lexicon": {
+          "singular": 4,
+          "plural": 0,
+          "negativo": 1,
+          "positivo": 8,
+          "passado": 1,
+          "presente": 3,
+          "futuro": 0
+        }
       },
       "Serra": {
         "turns": 1,
@@ -342,9 +423,219 @@
           0,
           0,
           1
-        ]
+        ],
+        "lexicon": {
+          "singular": 8,
+          "plural": 0,
+          "negativo": 5,
+          "positivo": 2,
+          "passado": 2,
+          "presente": 4,
+          "futuro": 0
+        }
       }
     }
   ],
-  "method": "Contagem refeita sobre a transcrição da Folha. Cada sequência de letras é uma palavra. A análise ignora maiúsculas e minúsculas e preserva acentos. Variações de gênero, número e flexões verbais ficam separadas. Os turnos de fala dos candidatos incluem perguntas, respostas, réplicas, tréplicas e considerações finais. Perguntas da produção, falas do mediador e títulos foram excluídos."
+  "method": "Contagem refeita sobre a transcrição da Folha. Cada sequência de letras é uma palavra. A análise ignora maiúsculas e minúsculas e preserva acentos. Variações de gênero, número e flexões verbais ficam separadas. Os turnos de fala dos candidatos incluem perguntas, respostas, réplicas, tréplicas e considerações finais. Perguntas da produção, falas do mediador e títulos foram excluídos.",
+  "dictionaries": {
+    "singular": [
+      "eu"
+    ],
+    "plural": [
+      "nós"
+    ],
+    "negativo": [
+      "não",
+      "nunca",
+      "nenhum",
+      "nenhuma",
+      "nenhuns",
+      "nenhumas",
+      "nada",
+      "menos",
+      "ainda"
+    ],
+    "positivo": [
+      "sim",
+      "sempre",
+      "todo",
+      "toda",
+      "todos",
+      "todas",
+      "tudo",
+      "mais",
+      "já"
+    ],
+    "passado": [
+      "fui",
+      "foi",
+      "fomos",
+      "foram",
+      "era",
+      "éramos",
+      "eram",
+      "estive",
+      "esteve",
+      "estivemos",
+      "estiveram",
+      "estava",
+      "estávamos",
+      "estavam",
+      "fiz",
+      "fez",
+      "fizemos",
+      "fizeram",
+      "fazia",
+      "fazíamos",
+      "faziam",
+      "ia",
+      "íamos",
+      "iam",
+      "fora",
+      "fizera",
+      "estivera"
+    ],
+    "presente": [
+      "sou",
+      "é",
+      "somos",
+      "são",
+      "vou",
+      "vai",
+      "vamos",
+      "vão",
+      "estou",
+      "está",
+      "estamos",
+      "estão",
+      "faço",
+      "faz",
+      "fazemos",
+      "fazem"
+    ],
+    "futuro": [
+      "serei",
+      "será",
+      "seremos",
+      "serão",
+      "irei",
+      "irá",
+      "iremos",
+      "irão",
+      "estarei",
+      "estará",
+      "estaremos",
+      "estarão",
+      "farei",
+      "fará",
+      "faremos",
+      "farão"
+    ]
+  },
+  "top": {
+    "Haddad": [
+      [
+        "São Paulo",
+        45
+      ],
+      [
+        "cidade",
+        41
+      ],
+      [
+        "serra",
+        23
+      ],
+      [
+        "educação",
+        21
+      ],
+      [
+        "kassab",
+        20
+      ],
+      [
+        "anos",
+        17
+      ],
+      [
+        "governo",
+        16
+      ],
+      [
+        "gestão",
+        14
+      ],
+      [
+        "prefeito",
+        14
+      ],
+      [
+        "brasil",
+        12
+      ],
+      [
+        "federal",
+        12
+      ],
+      [
+        "hospitais",
+        11
+      ]
+    ],
+    "Serra": [
+      [
+        "São Paulo",
+        24
+      ],
+      [
+        "cidade",
+        23
+      ],
+      [
+        "fernando",
+        20
+      ],
+      [
+        "inclusive",
+        19
+      ],
+      [
+        "anos",
+        18
+      ],
+      [
+        "programa",
+        18
+      ],
+      [
+        "governo",
+        17
+      ],
+      [
+        "mil",
+        15
+      ],
+      [
+        "ministério",
+        14
+      ],
+      [
+        "federal",
+        13
+      ],
+      [
+        "prefeitura",
+        13
+      ],
+      [
+        "kassab",
+        12
+      ]
+    ]
+  },
+  "fixation": {
+    "Haddad": "Kassab",
+    "Serra": "Marta e José Dirceu"
+  }
 }

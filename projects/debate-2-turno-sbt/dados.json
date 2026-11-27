@@ -60,7 +60,16 @@
           0,
           14,
           0
-        ]
+        ],
+        "lexicon": {
+          "singular": 12,
+          "plural": 10,
+          "negativo": 31,
+          "positivo": 14,
+          "passado": 6,
+          "presente": 50,
+          "futuro": 0
+        }
       },
       "Serra": {
         "turns": 8,
@@ -90,7 +99,16 @@
           0,
           0,
           3
-        ]
+        ],
+        "lexicon": {
+          "singular": 22,
+          "plural": 9,
+          "negativo": 38,
+          "positivo": 23,
+          "passado": 20,
+          "presente": 50,
+          "futuro": 1
+        }
       }
     },
     {
@@ -123,7 +141,16 @@
           1,
           12,
           0
-        ]
+        ],
+        "lexicon": {
+          "singular": 16,
+          "plural": 6,
+          "negativo": 17,
+          "positivo": 11,
+          "passado": 12,
+          "presente": 49,
+          "futuro": 0
+        }
       },
       "Serra": {
         "turns": 8,
@@ -153,7 +180,16 @@
           0,
           0,
           1
-        ]
+        ],
+        "lexicon": {
+          "singular": 9,
+          "plural": 7,
+          "negativo": 25,
+          "positivo": 16,
+          "passado": 26,
+          "presente": 54,
+          "futuro": 1
+        }
       }
     },
     {
@@ -186,7 +222,16 @@
           0,
           10,
           0
-        ]
+        ],
+        "lexicon": {
+          "singular": 32,
+          "plural": 8,
+          "negativo": 30,
+          "positivo": 15,
+          "passado": 18,
+          "presente": 48,
+          "futuro": 1
+        }
       },
       "Serra": {
         "turns": 9,
@@ -216,9 +261,219 @@
           0,
           0,
           2
-        ]
+        ],
+        "lexicon": {
+          "singular": 21,
+          "plural": 24,
+          "negativo": 31,
+          "positivo": 18,
+          "passado": 21,
+          "presente": 53,
+          "futuro": 2
+        }
       }
     }
   ],
-  "method": "Contagem refeita sobre a transcrição da Folha. Cada sequência de letras é uma palavra. A análise ignora maiúsculas e minúsculas e preserva acentos. Variações de gênero, número e flexões verbais ficam separadas. Os turnos de fala dos candidatos incluem perguntas, respostas, réplicas, tréplicas e considerações finais. Perguntas da produção, falas do mediador e títulos foram excluídos."
+  "method": "Contagem refeita sobre a transcrição da Folha. Cada sequência de letras é uma palavra. A análise ignora maiúsculas e minúsculas e preserva acentos. Variações de gênero, número e flexões verbais ficam separadas. Os turnos de fala dos candidatos incluem perguntas, respostas, réplicas, tréplicas e considerações finais. Perguntas da produção, falas do mediador e títulos foram excluídos.",
+  "dictionaries": {
+    "singular": [
+      "eu"
+    ],
+    "plural": [
+      "nós"
+    ],
+    "negativo": [
+      "não",
+      "nunca",
+      "nenhum",
+      "nenhuma",
+      "nenhuns",
+      "nenhumas",
+      "nada",
+      "menos",
+      "ainda"
+    ],
+    "positivo": [
+      "sim",
+      "sempre",
+      "todo",
+      "toda",
+      "todos",
+      "todas",
+      "tudo",
+      "mais",
+      "já"
+    ],
+    "passado": [
+      "fui",
+      "foi",
+      "fomos",
+      "foram",
+      "era",
+      "éramos",
+      "eram",
+      "estive",
+      "esteve",
+      "estivemos",
+      "estiveram",
+      "estava",
+      "estávamos",
+      "estavam",
+      "fiz",
+      "fez",
+      "fizemos",
+      "fizeram",
+      "fazia",
+      "fazíamos",
+      "faziam",
+      "ia",
+      "íamos",
+      "iam",
+      "fora",
+      "fizera",
+      "estivera"
+    ],
+    "presente": [
+      "sou",
+      "é",
+      "somos",
+      "são",
+      "vou",
+      "vai",
+      "vamos",
+      "vão",
+      "estou",
+      "está",
+      "estamos",
+      "estão",
+      "faço",
+      "faz",
+      "fazemos",
+      "fazem"
+    ],
+    "futuro": [
+      "serei",
+      "será",
+      "seremos",
+      "serão",
+      "irei",
+      "irá",
+      "iremos",
+      "irão",
+      "estarei",
+      "estará",
+      "estaremos",
+      "estarão",
+      "farei",
+      "fará",
+      "faremos",
+      "farão"
+    ]
+  },
+  "top": {
+    "Haddad": [
+      [
+        "serra",
+        36
+      ],
+      [
+        "governo",
+        31
+      ],
+      [
+        "São Paulo",
+        25
+      ],
+      [
+        "cidade",
+        23
+      ],
+      [
+        "anos",
+        16
+      ],
+      [
+        "kassab",
+        13
+      ],
+      [
+        "candidato",
+        12
+      ],
+      [
+        "educação",
+        12
+      ],
+      [
+        "gestão",
+        12
+      ],
+      [
+        "bicicleta",
+        11
+      ],
+      [
+        "mil",
+        11
+      ],
+      [
+        "dados",
+        10
+      ]
+    ],
+    "Serra": [
+      [
+        "São Paulo",
+        33
+      ],
+      [
+        "cidade",
+        31
+      ],
+      [
+        "prefeitura",
+        29
+      ],
+      [
+        "governo",
+        19
+      ],
+      [
+        "estado",
+        15
+      ],
+      [
+        "inclusive",
+        15
+      ],
+      [
+        "esta",
+        13
+      ],
+      [
+        "fizemos",
+        11
+      ],
+      [
+        "mil",
+        11
+      ],
+      [
+        "candidato",
+        10
+      ],
+      [
+        "prefeito",
+        10
+      ],
+      [
+        "programa",
+        10
+      ]
+    ]
+  },
+  "fixation": {
+    "Haddad": "Kassab",
+    "Serra": "PT"
+  }
 }

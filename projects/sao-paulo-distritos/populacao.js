@@ -95,7 +95,9 @@ async function main() {
     }
     root.querySelector('#head-start').textContent=begin;root.querySelector('#head-end').textContent=finish;
     const positive=sorted.filter(r=>r.series[finish]>r.series[begin]).length, negative=sorted.filter(r=>r.series[finish]<r.series[begin]).length;
-    root.querySelector('#period-desc').textContent=begin+'–'+finish+' · '+positive+' distritos cresceram e '+negative+' perderam moradores.';
+    const gains = positive === 1 ? '1 distrito cresceu' : positive + ' distritos cresceram';
+    const losses = negative === 1 ? '1 perdeu moradores' : negative + ' perderam moradores';
+    root.querySelector('#period-desc').textContent = begin + '–' + finish + ' · ' + gains + ' e ' + losses + '.';
   }
   start.addEventListener('change',()=>{endYears();draw();});end.addEventListener('change',draw);metric.addEventListener('change',draw);
   endYears();draw();root.querySelector('.lab-controls').hidden=false;
