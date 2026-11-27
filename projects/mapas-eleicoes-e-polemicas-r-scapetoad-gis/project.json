@@ -1,5 +1,8 @@
 {
   "topic": "Eleições",
   "summary": "Como aparece o segundo turno de 2014 quando o peso de cada estado acompanha a quantidade de votos válidos?",
-  "figure": "cartograma"
+  "figure": "cartograma",
+  "links": {
+    "https://fea8d0730ff2f4cb71e23581b079cd8194a8cc91-www.googledrive.com/host/0B1nuI_FiZnnlQmJuU2VqWW9FM3c/post.html": "#figura"
+  }
 }

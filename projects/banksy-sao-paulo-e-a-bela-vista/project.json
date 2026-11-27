@@ -2,5 +2,8 @@
   "topic": "Cidade",
   "summary": "Como muda o desenho de São Paulo quando só aparecem as áreas acima de uma densidade mínima?",
   "figure": "densidade",
-  "scope": "O recorte distrital permite comparar os censos de 2010 e 2022. A escala dos setores censitários do gráfico de 2014 aparece na figura original abaixo."
+  "scope": "O recorte distrital permite comparar os censos de 2010 e 2022. A escala dos setores censitários do gráfico de 2014 aparece na figura original abaixo.",
+  "links": {
+    "https://dl.dropboxusercontent.com/u/38380383/post.html": "#figura"
+  }
 }

@@ -4,7 +4,9 @@ if (target) {
   try {
     const visual = await import(moduleURL);
     await visual.render(target, target.dataset.figure);
+    target.dataset.state = "ready";
   } catch (error) {
+    target.dataset.state = "error";
     console.error('Falha ao abrir a visualização', error);
     const p = document.createElement('p');
     p.textContent = 'A visualização não carregou. Consulte o material original abaixo ou recarregue a página.';

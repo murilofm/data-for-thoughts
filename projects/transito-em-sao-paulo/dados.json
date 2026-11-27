@@ -1,0 +1,117 @@
+{
+  "source": "./media/2b96acb4-transito_saopaulo.png",
+  "published": "2012-11-05",
+  "context": [
+    [
+      "Congestionamento recorde citado",
+      295,
+      "km"
+    ],
+    [
+      "Automóveis",
+      5.3,
+      "milhões"
+    ],
+    [
+      "Habitantes por automóvel",
+      2.14,
+      "pessoas"
+    ],
+    [
+      "Habitantes por ônibus",
+      757,
+      "pessoas"
+    ],
+    [
+      "Menor velocidade média citada",
+      8.3,
+      "km/h"
+    ],
+    [
+      "Tempo médio de deslocamento diário",
+      150,
+      "minutos"
+    ]
+  ],
+  "victims": {
+    "title": "Mortes no trânsito",
+    "unit": "pessoas mortas no ano",
+    "source": "https://gestaourbana.prefeitura.sp.gov.br/arquivos/Mobilidade_final.pdf",
+    "credit": "Prefeitura de São Paulo / CET, Mortes em acidentes de trânsito no Município de São Paulo.",
+    "notes": "As categorias descrevem a vítima fatal. Para medir risco por viagem seriam necessárias medidas de exposição comparáveis.",
+    "years": [
+      2009,
+      2010,
+      2011,
+      2012
+    ],
+    "categories": [
+      "Pedestres",
+      "Motoristas e passageiros",
+      "Motociclistas",
+      "Ciclistas"
+    ],
+    "values": [
+      [
+        671,
+        222,
+        428,
+        61
+      ],
+      [
+        630,
+        200,
+        478,
+        49
+      ],
+      [
+        617,
+        187,
+        512,
+        49
+      ],
+      [
+        540,
+        201,
+        438,
+        52
+      ]
+    ],
+    "totals": [
+      1382,
+      1357,
+      1365,
+      1231
+    ]
+  },
+  "week": {
+    "days": [
+      "Segunda",
+      "Terça",
+      "Quarta",
+      "Quinta",
+      "Sexta",
+      "Sábado",
+      "Domingo"
+    ],
+    "day": [
+      41,
+      37,
+      26,
+      41,
+      39,
+      46,
+      23
+    ],
+    "night": [
+      30,
+      29,
+      44,
+      33,
+      49,
+      74,
+      41
+    ],
+    "note": "As barras transcrevem o painel de 2011. Elas somam 553 registros. A figura original não identifica o universo dessa distribuição, que difere do total de 1.365 vítimas."
+  }
+}

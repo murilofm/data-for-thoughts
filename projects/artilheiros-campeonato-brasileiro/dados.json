@@ -1,0 +1,285 @@
+{
+  "cutoff": "2012-10-31",
+  "source": "./media/d715dd6a-brasileiro.png",
+  "metrics": [
+    "Idade",
+    "Peso",
+    "Altura",
+    "Minutos jogados",
+    "Gols",
+    "Eficiência",
+    "Cartões amarelos",
+    "Cartões vermelhos",
+    "Salário"
+  ],
+  "colors": [
+    "#fff7ec",
+    "#fee8c8",
+    "#fdd49e",
+    "#fdbb84",
+    "#fc8d59",
+    "#ef6548",
+    "#d7301f",
+    "#b30000",
+    "#7f0000"
+  ],
+  "observations": [
+    {
+      "player": "Jonas",
+      "club": "Grêmio",
+      "year": 2010,
+      "levels": [
+        5,
+        5,
+        5,
+        6,
+        6,
+        6,
+        4,
+        7,
+        4
+      ]
+    },
+    {
+      "player": "Neymar",
+      "club": "Santos",
+      "year": 2010,
+      "levels": [
+        1,
+        2,
+        2,
+        6,
+        4,
+        5,
+        7,
+        4,
+        4
+      ]
+    },
+    {
+      "player": "Bruno César",
+      "club": "Corinthians",
+      "year": 2010,
+      "levels": [
+        3,
+        5,
+        4,
+        5,
+        4,
+        5,
+        4,
+        2,
+        3
+      ]
+    },
+    {
+      "player": "Elias",
+      "club": "Atlético-GO",
+      "year": 2010,
+      "levels": [
+        4,
+        4,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        null
+      ]
+    },
+    {
+      "player": "Obina",
+      "club": "Atlético-MG",
+      "year": 2010,
+      "levels": [
+        5,
+        8,
+        6,
+        2,
+        4,
+        3,
+        5,
+        4,
+        4
+      ]
+    },
+    {
+      "player": "Borges",
+      "club": "Santos",
+      "year": 2011,
+      "levels": [
+        7,
+        5,
+        5,
+        5,
+        3,
+        7,
+        6,
+        6,
+        7
+      ]
+    },
+    {
+      "player": "Fred",
+      "club": "Fluminense",
+      "year": 2011,
+      "levels": [
+        8,
+        6,
+        8,
+        3,
+        6,
+        4,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "player": "Deivid",
+      "club": "Flamengo",
+      "year": 2011,
+      "levels": [
+        7,
+        5,
+        5,
+        2,
+        3,
+        3,
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "player": "Leandro Damião",
+      "club": "Internacional",
+      "year": 2011,
+      "levels": [
+        3,
+        9,
+        9,
+        6,
+        4,
+        4,
+        7,
+        4,
+        5
+      ]
+    },
+    {
+      "player": "William",
+      "club": "Avaí",
+      "year": 2011,
+      "levels": [
+        5,
+        7,
+        4,
+        6,
+        5,
+        5,
+        6,
+        6,
+        4
+      ]
+    },
+    {
+      "player": "Ronaldinho Gaúcho",
+      "club": "Flamengo",
+      "year": 2011,
+      "levels": [
+        3,
+        4,
+        4,
+        5,
+        7,
+        8,
+        4,
+        4,
+        8
+      ]
+    },
+    {
+      "player": "Fred",
+      "club": "Fluminense",
+      "year": 2012,
+      "levels": [
+        6,
+        5,
+        7,
+        6,
+        6,
+        6,
+        6,
+        4,
+        7
+      ]
+    },
+    {
+      "player": "Luis Fabiano",
+      "club": "São Paulo",
+      "year": 2012,
+      "levels": [
+        7,
+        6,
+        6,
+        3,
+        6,
+        3,
+        6,
+        6,
+        7
+      ]
+    },
+    {
+      "player": "Bruno Mineiro",
+      "club": "Portuguesa",
+      "year": 2012,
+      "levels": [
+        7,
+        7,
+        7,
+        8,
+        4,
+        9,
+        8,
+        4,
+        4
+      ]
+    },
+    {
+      "player": "Aloísio",
+      "club": "Figueirense",
+      "year": 2012,
+      "levels": [
+        4,
+        6,
+        3,
+        3,
+        3,
+        3,
+        5,
+        4,
+        null
+      ]
+    },
+    {
+      "player": "Kieza",
+      "club": "Náutico",
+      "year": 2012,
+      "levels": [
+        5,
+        4,
+        5,
+        6,
+        7,
+        6,
+        5,
+        4,
+        4
+      ]
+    }
+  ],
+  "method": "As nove tonalidades foram recuperadas dos pixels do infográfico. O nível 1 corresponde à cor mais clara e o 9 à mais escura. Compare jogadores dentro da mesma coluna. A imagem preserva as faixas relativas e omite os valores brutos e pontos de corte. A cruz indica salário indisponível."
+}

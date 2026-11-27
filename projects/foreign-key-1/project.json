@@ -5,5 +5,8 @@
     "Código do PAC Info",
     "O repositório dos autores conserva a implementação da ferramenta apresentada no blog em 2014.",
     "https://github.com/brianstorti/pac-info"
-  ]
+  ],
+  "links": {
+    "http://pac-info.herokuapp.com/map.html": "https://github.com/brianstorti/pac-info"
+  }
 }

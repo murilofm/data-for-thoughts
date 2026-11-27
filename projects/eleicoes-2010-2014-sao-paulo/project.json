@@ -1,5 +1,9 @@
 {
   "topic": "Eleições",
   "summary": "Uma comparação da distribuição dos votos para presidente na capital paulista nos primeiros turnos de 2010 e 2014.",
-  "figure": "presidente-sp"
+  "figure": "presidente-sp",
+  "links": {
+    "http://www.googledrive.com/host/0B1nuI_FiZnnlcVdOdFhyWUNfcms/post.html": "#figura",
+    "http://www.googledrive.com/host/0B1nuI_FiZnnlUzFtMWxBNVlNeG8/plot.html": "#figura"
+  }
 }

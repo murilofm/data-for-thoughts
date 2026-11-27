@@ -1,0 +1,151 @@
+{
+  "year": 2011,
+  "unit": "R$ bilhões nominais",
+  "total": 1570,
+  "source": "./media/be988ab9-gastos_publicos1.png",
+  "functions": [
+    [
+      "Encargos especiais",
+      868
+    ],
+    [
+      "Previdência social",
+      346
+    ],
+    [
+      "Educação",
+      79
+    ],
+    [
+      "Saúde",
+      63
+    ],
+    [
+      "Trabalho",
+      49.5
+    ],
+    [
+      "Assistência social",
+      46
+    ],
+    [
+      "Defesa nacional",
+      28
+    ],
+    [
+      "Judiciário",
+      26
+    ],
+    [
+      "Outros",
+      19.1
+    ],
+    [
+      "Agricultura e organização agrária",
+      11.7
+    ],
+    [
+      "Transporte",
+      11
+    ],
+    [
+      "Legislativo",
+      6.9
+    ],
+    [
+      "Segurança",
+      6.5
+    ],
+    [
+      "Ciência",
+      4.9
+    ],
+    [
+      "Indústria, comércio, serviços e comunicações",
+      3.5
+    ],
+    [
+      "Gestão ambiental",
+      2.3
+    ],
+    [
+      "Urbanismo, habitação e saneamento",
+      1.6
+    ],
+    [
+      "Cultura",
+      0.6
+    ],
+    [
+      "Energia",
+      0.6
+    ],
+    [
+      "Desporto e lazer",
+      0.3
+    ]
+  ],
+  "pensions": [
+    [
+      "Regime privado",
+      263,
+      800
+    ],
+    [
+      "Regime público",
+      76,
+      7000
+    ]
+  ],
+  "legislature": [
+    [
+      "Câmara",
+      3.7,
+      7.3
+    ],
+    [
+      "Senado",
+      3.2,
+      39.6
+    ]
+  ],
+  "transport": [
+    [
+      "Rodoviário",
+      5.2
+    ],
+    [
+      "Ferroviário",
+      1
+    ],
+    [
+      "Aquaviário",
+      0.6
+    ],
+    [
+      "Aéreo",
+      0.01
+    ]
+  ],
+  "receipts": [
+    [
+      "Receita realizada do governo federal",
+      1710
+    ],
+    [
+      "Tributária (estados + municípios)",
+      1150
+    ],
+    [
+      "Tributária (federal)",
+      338
+    ]
+  ],
+  "sources": [
+    "SIGA Brasil, Senado Federal",
+    "Impostômetro",
+    "Inep",
+    "Ministério do Planejamento",
+    "Ministério da Previdência"
+  ]
+}

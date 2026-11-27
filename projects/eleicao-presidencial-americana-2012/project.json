@@ -5,5 +5,8 @@
     "Reconstitution 2012",
     "O estúdio Sosolimited documenta a visualização das falas de Barack Obama e Mitt Romney durante os debates.",
     "https://www.sosolimited.com/work/reconstitution-2012/"
-  ]
+  ],
+  "links": {
+    "http://reconstitution2012.com/": "https://www.sosolimited.com/work/reconstitution-2012/"
+  }
 }

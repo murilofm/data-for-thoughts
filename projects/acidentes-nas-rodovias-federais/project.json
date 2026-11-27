@@ -1,5 +1,8 @@
 {
   "topic": "Mobilidade",
   "summary": "Um mapa procura as concentrações de acidentes em rodovias federais em 2012.",
-  "figure": "rodovias"
+  "figure": "rodovias",
+  "links": {
+    "https://googledrive.com/host/0B1nuI_FiZnnlVkl3RFMwNVNpQWM/myMap_f.html": "#figura"
+  }
 }

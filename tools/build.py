@@ -32,11 +32,14 @@ def text_block_url(original, slugs):
     return re.sub(pattern, lambda m: f'href="../{m[1]}/"' if m[1] in slugs else m[0], original)
 
 
-def original_body(post, slugs):
+def original_body(post, slugs, replacements):
     parts = []
     for block in post["blocks"]:
         if block["type"] == "html":
-            parts.append(text_block_url(block["html"], slugs))
+            fragment = text_block_url(block["html"], slugs)
+            for old, new in replacements.items():
+                fragment = fragment.replace(f'href="{escape(old, quote=True)}"', f'href="{escape(new, quote=True)}"')
+            parts.append(fragment)
         elif block["type"] == "figure":
             src = block["src"]
             path = escape(src if src.startswith("https://") else "../../" + src, quote=True)
@@ -53,17 +56,18 @@ def article(post, conf, has_figure, slugs, template):
     chart = ""
     if has_figure:
         key = escape(conf["figure"], quote=True)
-        chart = f'<section class="research" aria-label="Análise reconstruída" data-figure="{key}"></section>'
+        chart = f'<section id="figura" class="research" aria-label="Análise reconstruída" data-figure="{key}"></section>'
     if conf.get("reading"):
         name, context, url = conf["reading"]
         chart = f'<section class="research"><h2>Leitura indicada</h2><p>{escape(context)}</p><a href="{escape(url,quote=True)}">{escape(name)}</a></section>'
     if conf.get("scope"):
         chart += f'<p class="help scope">{escape(conf["scope"])}</p>'
+    replacements = dict(conf.get("links", {})) if has_figure or conf.get("reading") else {}
     body = f'''<article class="article"><a class="back" href="../../#arquivo">Voltar ao arquivo</a>
 <header class="article-head"><p class="kind">{escape(conf["topic"])} &nbsp; / &nbsp; Arquivo</p><h1>{title}</h1>
 <p class="dek">{lead}</p><p class="meta"><time datetime="{post["date"][:10]}">{date_label(post["date"])}</time> &nbsp;·&nbsp; <a href="{REPO}/tree/main/projects/{slug}">Subprojeto no GitHub</a></p></header>
 {chart}<section class="paper"><h2>Publicação original</h2>
-<div class="source-copy">{original_body(post,slugs)}</div><div class="linkline"><a href="{escape(post["url"],quote=True)}">Ler no WordPress</a></div></section></article>'''
+<div class="source-copy">{original_body(post,slugs,replacements)}</div><div class="linkline"><a href="{escape(post["url"],quote=True)}">Ler no WordPress</a></div></section></article>'''
     return template.replace("<!-- TITLE -->",title).replace("<!-- DESCRIPTION -->",escape(conf["summary"],quote=True)).replace("<!-- BODY -->",body)
 
 
