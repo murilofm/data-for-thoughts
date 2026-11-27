@@ -41,6 +41,18 @@ async function run() {
             }
           }
           if (slug==='sao-paulo-distritos') {
+            const chart = page.locator('#od-chart');
+            await chart.getByRole('button').first().waitFor();
+            if (await chart.getByRole('button').count() !== 96) throw Error('Gráfico OD incompleto');
+            const plot = await chart.locator('svg').boundingBox();
+            const picker = await chart.locator('.od-picker').boundingBox();
+            if (!plot || !picker || plot.height < 380 || picker.y < plot.y + plot.height - 1)
+              throw Error('Controles sobre o gráfico OD');
+            await chart.getByRole('searchbox').fill('cambuci');
+            await chart.getByRole('searchbox').press('Enter');
+            if (!(await chart.locator('figcaption').innerText()).includes('−37%'))
+              throw Error('Seleção de Cambuci no gráfico OD');
+            console.log('OD verified at ' + width + ' px');
             await page.getByRole('combobox',{name:'Distrito',exact:true}).selectOption('Barra Funda');
             await page.getByRole('combobox',{name:'Medida',exact:true}).selectOption('percent');
             if ((await page.locator('#chosen-delta').innerText())!=='+132,5%') throw Error('Variação inesperada para Barra Funda');
