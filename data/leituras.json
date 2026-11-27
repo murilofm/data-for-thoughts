@@ -1,7 +1,0 @@
-{
-  "foreign-key-1": ["Código do PAC Info", "O repositório dos autores conserva a implementação da ferramenta apresentada no blog em 2014.", "https://github.com/brianstorti/pac-info"],
-  "foreign-key-2": ["An Economist’s Guide to Visualizing Data", "Jonathan A. Schwabish publicou o artigo no Journal of Economic Perspectives em 2014.", "https://www.aeaweb.org/articles?id=10.1257/jep.28.1.209"],
-  "eleicao-presidencial-americana-2012": ["Reconstitution 2012", "O estúdio Sosolimited documenta a visualização das falas de Barack Obama e Mitt Romney durante os debates.", "https://www.sosolimited.com/work/reconstitution-2012/"],
-  "eleicao-americana-presidencial-previsao-vs-realidade": ["How Silver predictions performed", "O FlowingData apresenta o gráfico de Rafa Irizarry e a discussão da noite da eleição.", "https://flowingdata.com/2012/11/07/how-silver-predictions-performed/"],
-  "mais-sobre-aeroportos": ["FlightAware MiseryMap", "O mapa da FlightAware acompanha atrasos e cancelamentos nos aeroportos dos Estados Unidos.", "https://pt.flightaware.com/miserymap/"]
-}

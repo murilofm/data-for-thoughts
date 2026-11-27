@@ -33,7 +33,7 @@ export async function render(container) {
     excel.href = url.href;
   }
   updateLinks();
-  form.addEventListener('input', () => { request?.abort(); status.textContent = ''; output.replaceChildren(); updateLinks(); });
+  form.addEventListener('input', () => { request?.abort(); request = undefined; status.textContent = ''; output.replaceChildren(); updateLinks(); });
   form.addEventListener('submit', async event => {
     event.preventDefault();
     const url = makeUrl();

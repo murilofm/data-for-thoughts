@@ -35,7 +35,10 @@ def main():
     articles = sorted(projects.glob("*/post.json"))
     if len(articles) != 25:
         raise ValueError("O arquivo histórico deve conter 25 publicações.")
-    pages = [ROOT/"index.html", projects/"sao-paulo-distritos/index.html"]
+    pages = [ROOT/"index.html"]
+    for manifest in projects.glob("*/project.json"):
+        if json.loads(manifest.read_text()).get("kind") == "study":
+            pages.append(manifest.with_name("index.html"))
     images = set()
     for path in articles:
         post = json.loads(path.read_text())
