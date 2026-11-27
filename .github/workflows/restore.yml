@@ -1,0 +1,30 @@
+name: Recuperar arquivo do WordPress
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - tools/import_archive.py
+      - .github/workflows/restore.yml
+    branches: [main]
+permissions:
+  contents: write
+concurrency:
+  group: restaurar-arquivo
+  cancel-in-progress: false
+jobs:
+  importar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Recuperar texto e figuras de cada publicação
+        run: python3 tools/import_archive.py
+      - name: Gravar os arquivos recuperados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add projects
+          if ! git diff --cached --quiet; then
+            git commit -m "Recover the WordPress posts and figures in their GitHub subprojects"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
