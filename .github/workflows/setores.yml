@@ -1,0 +1,28 @@
+name: Reconstruir setores censitários de São Paulo
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'projects/banksy-sao-paulo-e-a-bela-vista/build-setores.py'
+      - '.github/workflows/setores.yml'
+permissions:
+  contents: write
+jobs:
+  setores:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install 'pyshp>=2.3,<3' Pillow pyproj
+      - run: python projects/banksy-sao-paulo-e-a-bela-vista/build-setores.py
+      - name: Salvar o raster e sua proveniência
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add projects/banksy-sao-paulo-e-a-bela-vista/setores-2010.png projects/banksy-sao-paulo-e-a-bela-vista/setores-2010.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Recalculate 2010 census tract densities from IBGE"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
