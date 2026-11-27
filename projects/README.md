@@ -6,7 +6,7 @@ Cada publicação tem sua própria página, fontes e arquivos de análise.
 | --- | --- | --- |
 | 2026-11-27 | [Onde São Paulo cresceu?](sao-paulo-distritos/) | Estudo novo · Demografia |
 | 2016-09-02 | [Back again [Chikungunya]](back-again-chikungunya/) | Relato pessoal com gráfico recuperado |
-| 2014-11-19 | [Banksy, São Paulo e a Bela Vista](banksy-sao-paulo-e-a-bela-vista/) | Visualização reconstruída |
+| 2014-11-19 | [Banksy, São Paulo e a Bela Vista](banksy-sao-paulo-e-a-bela-vista/) | Mapa por setor censitário reconstruído |
 | 2014-11-05 | [Ilhas e eleições (Shiny + R + QGIS)](ilhas-e-eleicoes-shiny-r-qgis/) | Publicação histórica com fontes preservadas |
 | 2014-10-28 | [Mapas, eleições e polêmicas (R + ScapeToad + GIS)](mapas-eleicoes-e-polemicas-r-scapetoad-gis/) | Publicação histórica com fontes preservadas |
 | 2014-10-20 | [Sobre vagas de rua e ciclovias (São Paulo) + NetLogo](vagas-de-rua-e-ciclovias-sp-netlogo/) | Modelo reconstruído |
@@ -19,7 +19,7 @@ Cada publicação tem sua própria página, fontes e arquivos de análise.
 | 2014-01-16 | [Foreign key [1]](foreign-key-1/) | Referência comentada |
 | 2014-01-08 | [Acidentes nas rodovias federais](acidentes-nas-rodovias-federais/) | Dados do mapa original recuperados |
 | 2013-12-26 | [Séries Temporais do Bacen no Excel](series-temporais-bacen/) | Visualização reconstruída |
-| 2013-12-17 | [Mapa das subprefeituras no Excel](mapa-das-subprefeituras-no-excel/) | Visualização reconstruída |
+| 2013-12-17 | [Mapa das subprefeituras no Excel](mapa-das-subprefeituras-no-excel/) | Mapa da planilha original reproduzido |
 | 2013-12-11 | [Passo-a-Passo: Infográfico Aeroportos](passo-a-passo-aeroportos/) | Tutorial reproduzível |
 | 2013-12-04 | [Mais sobre aeroportos](mais-sobre-aeroportos/) | Referência comentada |
 | 2013-12-03 | [Aeroportos, partidas e retornos](aeroportos-partidas-e-retornos/) | Boletins históricos recuperados |

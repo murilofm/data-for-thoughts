@@ -4,9 +4,9 @@
 
 Como muda o desenho de São Paulo quando só aparecem as áreas acima de uma densidade mínima?
 
-**Edição publicada** · Visualização reconstruída
+**Edição publicada** · Mapa por setor censitário reconstruído
 
-O recorte distrital permite comparar os censos de 2010 e 2022. A escala dos setores censitários do gráfico de 2014 aparece na figura original abaixo.
+O mapa reconstrói o filtro de densidade nos setores censitários de 2010. Há densidade disponível para 18.363 setores. Os 590 sem valor ficam em branco. O recorte por distrito permite comparar 2010 e 2022.
 
 ## Fontes e arquivos
 
@@ -14,6 +14,7 @@ O recorte distrital permite comparar os censos de 2010 e 2022. A escala dos seto
 - [Texto, figuras e links preservados](post.json)
 - [Configuração editorial](project.json)
 - [Página publicada](index.html)
+- [build-distritos.py](build-distritos.py)
 - [build-setores.py](build-setores.py)
 - [distritos-densidade.json](distritos-densidade.json)
 - [media](media/)

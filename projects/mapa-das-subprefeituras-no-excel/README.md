@@ -4,9 +4,9 @@
 
 Da planilha ao mapa das subprefeituras de São Paulo.
 
-**Edição publicada** · Visualização reconstruída
+**Edição publicada** · Mapa da planilha original reproduzido
 
-O explorador usa as 31 subprefeituras da série histórica de lançamentos residenciais.
+A razão entre o valor geral de vendas e a área lançada em 2010 reproduz os 26 valores visíveis na figura publicada. Cinco subprefeituras não têm valor naquele ano. O explorador usa a divisão histórica em 31 subprefeituras e permite trocar o ano, a cor e os dados.
 
 ## Fontes e arquivos
 
@@ -14,6 +14,7 @@ O explorador usa as 31 subprefeituras da série histórica de lançamentos resid
 - [Texto, figuras e links preservados](post.json)
 - [Configuração editorial](project.json)
 - [Página publicada](index.html)
+- [build.py](build.py)
 - [lancamentos.json](lancamentos.json)
 - [media](media/)
 - [view.js](view.js)
