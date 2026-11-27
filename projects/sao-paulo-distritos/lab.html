@@ -1,3 +1,20 @@
+<figure class="stencil" id="mapa-de-densidade" aria-labelledby="stencil-title">
+  <figcaption class="stencil-heading">
+    <h2 id="stencil-title">São Paulo em estêncil</h2>
+    <span>IBGE · Censo 2010</span>
+  </figcaption>
+  <div class="stencil-stage">
+    <img src="../banksy-sao-paulo-e-a-bela-vista/media/ba26ac43-density_01100.png" width="1487" height="1029" alt="Estêncil original de 2014. As áreas mais densas formam um desenho preto de São Paulo sobre fundo branco.">
+  </div>
+  <div class="stencil-caption">
+    <div class="stencil-control" hidden>
+      <label for="density-cutoff">Densidade mínima</label>
+      <output for="density-cutoff" id="density-value"></output>
+      <input type="range" id="density-cutoff" min="0" max="60000" step="500" value="5000" aria-describedby="stencil-legend">
+    </div>
+    <p id="stencil-legend">Imagem da publicação <a href="../banksy-sao-paulo-e-a-bela-vista/">Banksy, São Paulo e a Bela Vista</a> (2014).</p>
+  </div>
+</figure>
 <section class="lab" data-lab aria-labelledby="explore-title">
   <h2 id="explore-title">Compare os distritos</h2>
   <div class="lab-controls" hidden>
@@ -26,3 +43,4 @@
 <p>O gráfico usa a série da Prefeitura de São Paulo para os 96 distritos. A variação percentual divide a diferença entre as duas contagens pela população do primeiro ano. Os intervalos entre censos têm durações diferentes e as taxas exibidas são acumuladas no período.</p>
 <p>Para 1950–1980, a Prefeitura recompôs retrospectivamente os limites distritais. De 1991 a 2010, agregou os setores censitários. Os valores de 2022 usam os agregados preliminares da versão publicada pela Prefeitura. As somas dos distritos reproduzem os totais municipais publicados para 2010 e 2022.</p>
 <div class="linkline"><a href="https://drive.prefeitura.sp.gov.br/cidade/secretarias/upload/chamadas/314_01_censo_r5-sub-distr_pop-abs_1950-2022_final_1715805085.htm">Tabela original · SMUL/GEOINFO e IBGE</a><a href="./distritos.csv" download>Baixar os dados (CSV)</a><a href="https://github.com/murilofm/data-for-thoughts/tree/main/projects/sao-paulo-distritos">Subprojeto no GitHub</a></div></section>
+<script type="module" src="./estencil.js"></script>

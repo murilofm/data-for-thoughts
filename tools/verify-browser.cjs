@@ -41,6 +41,20 @@ async function run() {
             }
           }
           if (slug==='sao-paulo-distritos') {
+            const slider = page.getByRole('slider', {name:'Densidade mínima'});
+            await slider.waitFor();
+            const canvas = page.locator('#mapa-de-densidade canvas');
+            const countInk = () => canvas.evaluate(el => {
+              const {data} = el.getContext('2d').getImageData(0, 0, el.width, el.height);
+              let total = 0;
+              for (let i = 3; i < data.length; i += 4) if (data[i]) total++;
+              return total;
+            });
+            await slider.press('Home');
+            const full = await countInk();
+            await slider.press('End');
+            const dense = await countInk();
+            if (!(full > dense && dense > 0)) throw Error('O controle não alterou o estêncil');
             await page.getByRole('combobox',{name:'Distrito',exact:true}).selectOption('Barra Funda');
             await page.getByRole('combobox',{name:'Medida',exact:true}).selectOption('percent');
             if ((await page.locator('#chosen-delta').innerText())!=='+132,5%') throw Error('Variação inesperada para Barra Funda');

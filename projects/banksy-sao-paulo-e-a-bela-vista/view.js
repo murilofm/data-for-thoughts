@@ -1,28 +1,11 @@
 import {dataset,item,field,controls,map,svgNode,rankedTable,fmt,source,readout} from '../../data/geografia/figuras.js';
-
-async function densityRaster() {
-  const image=new Image();
-  image.src=new URL('setores-2010.png',import.meta.url);
-  await image.decode();
-  const canvas=document.createElement('canvas');
-  canvas.width=image.naturalWidth;
-  canvas.height=image.naturalHeight;
-  const ctx=canvas.getContext('2d',{willReadFrequently:true});
-  ctx.drawImage(image,0,0);
-  const values=ctx.getImageData(0,0,canvas.width,canvas.height);
-  const pixels=new Int32Array(canvas.width*canvas.height);
-  for(let i=0;i<pixels.length;i++) {
-    const j=4*i;
-    pixels[i]=((values.data[j]<<16)|(values.data[j+1]<<8)|values.data[j+2])-1;
-  }
-  return {canvas,ctx,pixels,image:values};
-}
+import { sectorStencil } from './sector-stencil.js';
 
 export async function render(container) {
   const [geo,data,meta,raster]=await Promise.all([
     dataset(new URL('../../data/geografia/distritos.json',import.meta.url)),
     dataset(new URL('distritos-densidade.json',import.meta.url)),
-    dataset(new URL('setores-2010.json',import.meta.url)),densityRaster()
+    dataset(new URL('setores-2010.json',import.meta.url)),sectorStencil()
   ]);
   item(container,'h3','Onde São Paulo se adensa?');
   item(container,'p','Movimente o limite para revelar as áreas que atingem a densidade escolhida. Nos setores censitários, pequenas áreas densas aparecem mesmo dentro de distritos com média baixa.');
@@ -32,9 +15,8 @@ export async function render(container) {
   const slider=item(label,'input');
   slider.type='range';slider.min='0';slider.max='60000';slider.step='500';slider.value='10000';
   const output=item(label,'output');
-  const {canvas,ctx,pixels,image}=raster;
+  const {canvas,pixels}=raster;
   canvas.style.cssText='display:block;max-width:100%;height:auto;max-height:540px;margin:.75rem auto';
-  canvas.setAttribute('role','img');
   container.append(canvas);
   const svg=map(container,'Distritos acima da densidade selecionada');
   const paths=geo.districts.map(d=>{
@@ -56,15 +38,7 @@ export async function render(container) {
     svg.style.display=sectors?'none':'block';
     tableWrap.hidden=sectors;
     if(sectors) {
-      for(let i=0;i<pixels.length;i++) {
-        const j=i*4, active=pixels[i]>=cutoff;
-        image.data[j]=20;
-        image.data[j+1]=23;
-        image.data[j+2]=22;
-        image.data[j+3]=active?255:0;
-      }
-      ctx.putImageData(image,0,0);
-      canvas.setAttribute('aria-label','Setores censitários de São Paulo com pelo menos '+fmt(cutoff)+' habitantes por km² em 2010.');
+      raster.draw(cutoff);
       status.textContent=fmt(meta.setoresComDado)+' setores com população publicada. '+fmt(meta.setoresSemDado)+' setores sem valor utilizável ficam em branco. Toque no mapa para consultar a densidade de um setor.';
     } else {
       const key='density'+mode.value;
