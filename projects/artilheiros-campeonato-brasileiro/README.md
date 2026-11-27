@@ -4,9 +4,9 @@
 
 Compare o perfil dos principais goleadores do Brasileirão de 2010, 2011 e parte de 2012.
 
-**Edição publicada** · Visualização reconstruída
+**Edição publicada** · Heatmap reconstruído da figura
 
-
+O infográfico publicou níveis de cor. As 144 células recuperam esses níveis e os campos ausentes; os valores brutos das nove métricas não foram publicados.
 
 ## Fontes e arquivos
 
@@ -15,6 +15,7 @@ Compare o perfil dos principais goleadores do Brasileirão de 2010, 2011 e parte
 - [Configuração editorial](project.json)
 - [Página publicada](index.html)
 - [dados.json](dados.json)
+- [extrair.py](extrair.py)
 - [media](media/)
 - [view.js](view.js)
 

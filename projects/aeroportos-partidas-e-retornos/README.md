@@ -4,9 +4,9 @@
 
 Como os atrasos se distribuíam entre aeroportos brasileiros ao longo do dia?
 
-**Edição publicada** · Visualização reconstruída
+**Edição publicada** · Boletins históricos recuperados
 
-
+A série contém 284 boletins horários da Infraero e 12.846 registros de aeroportos.
 
 ## Fontes e arquivos
 

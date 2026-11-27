@@ -4,9 +4,9 @@
 
 Uma simulação explora como a oferta de vagas de rua e a circulação de veículos à procura de estacionamento afetam o trânsito.
 
-**Edição publicada** · Publicação histórica com fontes preservadas
+**Edição publicada** · Modelo reconstruído
 
-
+O executável histórico do NetLogo saiu do ar. O novo simulador explicita suas regras e permite comparar cenários com as mesmas chegadas.
 
 ## Fontes e arquivos
 
@@ -14,7 +14,10 @@ Uma simulação explora como a oferta de vagas de rua e a circulação de veícu
 - [Texto, figuras e links preservados](post.json)
 - [Configuração editorial](project.json)
 - [Página publicada](index.html)
+- [estudos.csv](estudos.csv)
 - [media](media/)
+- [modelo.mjs](modelo.mjs)
+- [view.js](view.js)
 
 ## Executar
 

@@ -4,9 +4,9 @@
 
 O passo a passo do coletor que transformou os boletins da Infraero em uma série histórica.
 
-**Edição publicada** · Visualização reconstruída
+**Edição publicada** · Tutorial reproduzível
 
-
+O boletim original incluído permite reproduzir a extração em Python e comparar a saída com os dados publicados.
 
 ## Fontes e arquivos
 

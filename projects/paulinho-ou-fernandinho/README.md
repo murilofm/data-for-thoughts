@@ -4,9 +4,9 @@
 
 Os passes de dois volantes brasileiros na partida contra Camarões, na Copa de 2014.
 
-**Edição publicada** · Publicação histórica com fontes preservadas
+**Edição publicada** · Mapas de passes originais recuperados
 
-
+Os quadros do GIF publicado em 2014 permitem alternar os passes de cada jogador e a sobreposição.
 
 ## Fontes e arquivos
 
@@ -14,7 +14,11 @@ Os passes de dois volantes brasileiros na partida contra Camarões, na Copa de 2
 - [Texto, figuras e links preservados](post.json)
 - [Configuração editorial](project.json)
 - [Página publicada](index.html)
+- [extrair_quadros.py](extrair_quadros.py)
+- [mapas](mapas/)
 - [media](media/)
+- [observacoes.json](observacoes.json)
+- [view.js](view.js)
 
 ## Executar
 

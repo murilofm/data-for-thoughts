@@ -4,9 +4,9 @@
 
 Um mapa procura as concentrações de acidentes em rodovias federais em 2012.
 
-**Edição publicada** · Publicação histórica com fontes preservadas
+**Edição publicada** · Dados do mapa original recuperados
 
-
+A camada recuperada reúne os trechos acima de 14 acidentes por quilômetro. A figura histórica abaixo também mostra o mapa geral.
 
 ## Fontes e arquivos
 
@@ -15,8 +15,10 @@ Um mapa procura as concentrações de acidentes em rodovias federais em 2012.
 - [Configuração editorial](project.json)
 - [Página publicada](index.html)
 - [build.py](build.py)
+- [estados.json](estados.json)
 - [media](media/)
 - [trechos-2012.json](trechos-2012.json)
+- [view.js](view.js)
 
 ## Executar
 

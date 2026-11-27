@@ -4,9 +4,9 @@
 
 O que era preciso fazer para extrair os dados brasileiros de comércio exterior e como consultar a série hoje.
 
-**Edição publicada** · Publicação histórica com fontes preservadas
+**Edição publicada** · Tutorial e consulta reconstruídos
 
-
+As seis observações visíveis no AliceWeb aparecem separadas da nova consulta da unidade aduaneira de Santos no Comex Stat.
 
 ## Fontes e arquivos
 
@@ -14,8 +14,10 @@ O que era preciso fazer para extrair os dados brasileiros de comércio exterior 
 - [Texto, figuras e links preservados](post.json)
 - [Configuração editorial](project.json)
 - [Página publicada](index.html)
+- [aliceweb.csv](aliceweb.csv)
 - [comex.py](comex.py)
 - [media](media/)
+- [view.js](view.js)
 
 ## Executar
 
