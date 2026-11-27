@@ -36,3 +36,13 @@ jobs:
           print('Marker field vocabulary',Counter(k for block in markers for k in whitelist if re.search(r'\b'+re.escape(k)+r'\s*:',block,re.I)))
           numeric_only=re.compile(r'<td[^>]*>\s*(-?\d{1,7}(?:[.,]\d{1,8})?)\s*</td>',re.I)
           print('Numeric cells per marker',Counter(len(numeric_only.findall(block)) for block in markers).most_common(10))
+          def signature(value):
+              value=re.sub(r'https?://[^\s\x22\x27<>]+',' URL ',value,flags=re.I)
+              words=re.findall(r'[^\W\d_]+|\d+(?:[.,]\d+)?|[^\s\w]',html.unescape(value),re.U)
+              safe={'rodovia','km','trecho','acidentes','por','de','a','ao','início','inicio','fim','acidente','em','total','latitude','longitude','br','uf','km','grau','acidentes/km','registro','grave','médio','baixo','ac','al','am','ap','ba','ce','df','es','go','ma','mg','ms','mt','pa','pb','pe','pi','pr','rj','rn','ro','rr','rs','sc','se','sp','to','b','tr','td','br','table','div','latlng','title','position','icon','map','png','url'}
+              tokens=[(v if v.lower() in safe or v in '<>:/=-' else 'N' if re.fullmatch(r'\d+(?:[.,]\d+)?',v) else '_') for v in words]
+              return ' '.join(tokens)
+          print('Title token pattern',signature(re.search(r"""title\s*:\s*["']([^"']+)""",markers[0]).group(1))[:300])
+          keymatch=re.search(r'acidentes',page,re.I)
+          if keymatch: print('Popup token pattern',signature(page[max(0,keymatch.start()-120):keymatch.end()+850])[:750])
+          print('HTML tags and attributes',Counter(t.lower() for t in re.findall(r'<\s*([a-z]+)(?=\s|>)',page,re.I) if t.lower() in {'table','b','br','td','tr','a','p','div','strong','h1','span'}))
