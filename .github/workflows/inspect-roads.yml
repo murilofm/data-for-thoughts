@@ -1,48 +1,19 @@
-name: Inspect recovered highway map structure
+name: Recover the public 2012 highway dataset
 on:
   push:
     branches: [restore-road-data]
-    paths: ['.github/workflows/inspect-roads.yml']
-permissions: {contents: read}
+    paths: ['.github/workflows/inspect-roads.yml', 'projects/acidentes-nas-rodovias-federais/build.py']
+permissions: {contents: write}
 jobs:
-  diagnostic:
+  recover:
     runs-on: ubuntu-latest
     steps:
-      - name: Read inert source structure
-        shell: python
+      - uses: actions/checkout@v4
+      - run: python projects/acidentes-nas-rodovias-federais/build.py
+      - name: Save extracted quantitative data on this branch
         run: |
-          from urllib.request import urlopen
-          import re
-          url='https://drive.usercontent.google.com/download?id=0B1nuI_FiZnnlSlVJZk1DS0VBRnc&export=download&confirm=t&resourcekey=0-vPce_ZiLbAdrejESTT1WWQ'
-          with urlopen(url,timeout=60) as response: raw=response.read(700000)
-          print('Source bytes',len(raw))
-          assert len(raw)==530789
-          page=raw.decode('latin1')
-          print('Definitions', sorted(set(re.findall(r'(?:var|function)\s+(\w+)',page)))[:120])
-          print('Map calls',sorted(set(re.findall(r'google\.maps\.(\w+)',page))))
-          print('Table keys',sorted(set(re.findall(r'<(?:th|b|td|strong)>\s*([\w /().²%-]{1,35})\s*[:<]',page,re.I)))[:150])
-          from collections import Counter
-          print('JavaScript keys',Counter(re.findall(r"""['"]([a-zA-Z_][a-zA-Z0-9_. -]{1,19})['"]\s*:""",page)).most_common(100))
-          import hashlib,html
-          print('Snapshot digest',hashlib.sha256(raw).hexdigest())
-          markers=re.split(r'new\s+google\.maps\.Marker\(\{',page)[1:]
-          print('Marker count',len(markers))
-          whitelist=['position','icon','map','title','content','description','infowindow','setContent','onclick','addListener','src','table','th','td','br','img','b','strong','acidentes','rodovia','trecho','classe','gravidade','risco','início','inicio','fim','km','PNV','UF','BR','taxa','extensão','extensao','médio','grave','baixo','alto','media','média','green','yellow','red','orange','blue']
-          for term in whitelist:
-              count=sum(bool(re.search(r'(?<!\w)'+re.escape(term)+r'(?!\w)',html.unescape(block),re.I)) for block in markers)
-              if count: print('Known token',term,count)
-          print('Recognized icon file identifiers',Counter(re.findall(r'icon[_-](\d{1,2})\.png',page,re.I)))
-          print('Google Maps standard icon colors',Counter(re.findall(r'(blue|orange|green|red|yellow)\.png',page,re.I)))
-          print('Marker field vocabulary',Counter(k for block in markers for k in whitelist if re.search(r'\b'+re.escape(k)+r'\s*:',block,re.I)))
-          numeric_only=re.compile(r'<td[^>]*>\s*(-?\d{1,7}(?:[.,]\d{1,8})?)\s*</td>',re.I)
-          print('Numeric cells per marker',Counter(len(numeric_only.findall(block)) for block in markers).most_common(10))
-          def signature(value):
-              value=re.sub(r'https?://[^\s\x22\x27<>]+',' URL ',value,flags=re.I)
-              words=re.findall(r'[^\W\d_]+|\d+(?:[.,]\d+)?|[^\s\w]',html.unescape(value),re.U)
-              safe={'rodovia','km','trecho','acidentes','por','de','a','ao','início','inicio','fim','acidente','em','total','latitude','longitude','br','uf','km','grau','acidentes/km','registro','grave','médio','baixo','ac','al','am','ap','ba','ce','df','es','go','ma','mg','ms','mt','pa','pb','pe','pi','pr','rj','rn','ro','rr','rs','sc','se','sp','to','b','tr','td','br','table','div','latlng','title','position','icon','map','png','url'}
-              tokens=[(v if v.lower() in safe or v in '<>:/=-' else 'N' if re.fullmatch(r'\d+(?:[.,]\d+)?',v) else '_') for v in words]
-              return ' '.join(tokens)
-          print('Title token pattern',signature(re.search(r"""title\s*:\s*["']([^"']+)""",markers[0]).group(1))[:300])
-          keymatch=re.search(r'acidentes',page,re.I)
-          if keymatch: print('Popup token pattern',signature(page[max(0,keymatch.start()-120):keymatch.end()+850])[:750])
-          print('HTML tags and attributes',Counter(t.lower() for t in re.findall(r'<\s*([a-z]+)(?=\s|>)',page,re.I) if t.lower() in {'table','b','br','td','tr','a','p','div','strong','h1','span'}))
+          git add -- projects/acidentes-nas-rodovias-federais/trechos-2012.json
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Recover road segments from the original published map'
+            git push origin HEAD:restore-road-data
+          fi
