@@ -1,7 +1,6 @@
 const target = document.querySelector('[data-figure]');
 if (target) {
-  const group = target.dataset.group;
-  const moduleURL = new URL('../data/' + group + '/view.js', import.meta.url);
+  const moduleURL = new URL('./view.js', document.baseURI);
   try {
     const visual = await import(moduleURL);
     await visual.render(target, target.dataset.figure);

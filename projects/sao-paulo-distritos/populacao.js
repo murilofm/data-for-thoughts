@@ -2,7 +2,7 @@ const root = document.querySelector('[data-lab]');
 const int = new Intl.NumberFormat('pt-BR');
 const percent = new Intl.NumberFormat('pt-BR', {maximumFractionDigits: 1, minimumFractionDigits: 1});
 const signed = (n, fmt) => (n > 0 ? '+' : '') + fmt.format(n);
-const source = new URL('../data/populacao/distritos.csv', import.meta.url);
+const source = new URL('./distritos.csv', import.meta.url);
 const years = [1950,1960,1970,1980,1991,2000,2010,2022];
 const NS = 'http://www.w3.org/2000/svg';
 function svgNode(name, attrs, content) {
