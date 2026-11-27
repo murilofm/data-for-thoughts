@@ -1,0 +1,146 @@
+{
+  "id": 283,
+  "slug": "passo-a-passo-data-scraping-aliceweb",
+  "title": "Passo-a-Passo: Data Scraping – Aliceweb",
+  "date": "2014-01-29",
+  "url": "https://dataforthoughts.wordpress.com/2014/01/29/passo-a-passo-data-scraping-aliceweb/",
+  "categories": [
+    "Dados Públicos",
+    "Data Scrapping",
+    "Passo-a-Passo"
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Na publicação sobre os <a href=\"https://dataforthoughts.wordpress.com/2013/12/03/aeroportos-partidas-e-retornos/\">dados de atrasos nos aeroportos</a> tangenciei um tema que é recorrentemente o principal obstáculo na análise de algum fenômeno relevante a partir de um conjunto de dados: a dificuldade associada à extração de bases de dados consistentes e organizadas, mesmo que disponibilizadas de forma padronizada. Para os que não ouviram falar, <a href=\"http://en.wikipedia.org/wiki/Data_scraping\">Data scraping</a> (ou raspagem de dados) é nome que se dá à técnica através da qual procura-se extrair dados proveniente de algum programa para algum outro programa de computador, de uma maneira legível; <a href=\"http://en.wikipedia.org/wiki/Web_scraping\">web scraping</a> nada mais é que um subgrupo para o qual a técnica consiste em extrair dados disponíveis em websites.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>Apesar de existirem diversas maneiras de extrair dados de websites, que podem envolver diversas linguagens de programação, parte dos dados disponíveis podem ser extraídos de maneira bastante simples que não exigem um grande conhecimento prévio de programação. No “<a href=\"https://dataforthoughts.wordpress.com/2013/12/11/passo-a-passo-aeroportos/\">Passo-a-Passo: Infográfico Aeroportos</a>” comentei como com algumas poucas linhas armazenadas no <a href=\"https://developers.google.com/apps-script/\">Google Apps Script</a> me possibilitaram coletar dados diários sobre os atrasos nos aeroportos. Minha ideia é introduzir aqui uma maneira simples de extração de dados, a partir de um conjunto de informações com uma organização não muito amigável para a construção de uma base de dados grande e robusta.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p><strong>Fonte dos dados:</strong> minha ideia é utilizar como exemplo para data scrapping os dados disponíveis no <a href=\"http://aliceweb2.desenvolvimento.gov.br/\">AliceWeb</a>. Segundo definição do próprio site,</p>"
+    },
+    {
+      "type": "html",
+      "html": "<blockquote><p>O Sistema de Análise das Informações de Comércio Exterior, denominado AliceWeb, da Secretaria de Comércio Exterior, do Ministério do Desenvolvimento, Indústria e Comércio Exterior, foi desenvolvido visando modernizar as formas de acesso e a sistemática de disseminação das estatísticas brasileiras de exportações e importações.</p></blockquote>"
+    },
+    {
+      "type": "html",
+      "html": "<p>Em outras palavras, o sistema em questão permite o acesso a uma extensa base de dados sobre o desempenho do comércio internacional brasileiro, com um nível de desagregação e detalhe bastante elevado. Porém, como nem tudo é perfeito, a organização e estrutura de consulta do sistema pode ser limitante para alguns tipos de pesquisa. Acessando a consulta “Exportação 1997 – 2013 NCM 8 dígitos”, por exemplo, e selecionando a opção “Cesta de produtos” nos deparamos rapidamente com a restrição <em>Adicione até 60 produtos</em>. Tal impedimento faz com que qualquer consulta a uma cesta de bens mais ampla tenha que ser subdividida em diversos conjuntos de 60 itens. Por outro lado, se o objetivo for a coleta de uma base de dados mensal de um único item encontraremos o aviso <em>Adicione no máximo seis períodos</em> ao tentar incluir todos os meses desejados. A solução “braçal” para esses obstáculos (repetir diversas vezes a consulta) pode ter um custo muito alto dependendo a quantidade de informação que alguém deseja extrair dessa base.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p><strong>Solução:</strong> possivelmente, existem diversas soluções possíveis para transpor essas barreiras. Escolhi explicar aqui uma que parece facilmente replicada e que não exige grandes conhecimentos prévios: <a href=\"http://imacros.net/download\">iMacros</a>. iMacros é uma extensão que pode ser instalada no Firefox, Google Chrome ou Internet Explorer e que permite automatizar a navegação em websites e extrair dados dos mesmos. Um grande ponto positivo da extensão é a gravação de tarefas realizadas pelo usuário transformando-as em um código replicável. Em palavras, ao ativar o modo de gravação, o aplicativo registra todos os cliques e outras interações realizadas no navegador.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p><strong>Exemplo:</strong> como já mencionei, utilizarei a base de dados da AliceWeb como exemplo de uso do iMacros. Os parâmetros básicos da pesquisa são:</p>"
+    },
+    {
+      "type": "html",
+      "html": "<ul>\n<li><strong>Fluxo do comércio:</strong> Exportação</li>\n<li><strong>Tipo de produto:</strong> Soja</li>\n<li><strong>Porto:</strong> Santos</li>\n<li><strong>Período:</strong> Mensal, entre janeiro de 2000 e dezembro de 2013</li>\n</ul>"
+    },
+    {
+      "type": "html",
+      "html": "<p>O tipo de carga e o porto escolhido são meramente ilustrativos. O importante é demonstrar as funcionalidades da extensão e as variáveis de escolhida disponíveis para uma consulta. O primeiro passo é acessar o site da AliceWeb (<a href=\"http://aliceweb2.desenvolvimento.gov.br/\">http://aliceweb2.desenvolvimento.gov.br/</a>) o qual exige apenas o cadastro prévio do usuário. Após o login, entrar em</p>"
+    },
+    {
+      "type": "figure",
+      "src": "projects/passo-a-passo-data-scraping-aliceweb/media/6517a2e0-consulta_bt_aliceweb.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/01/consulta_bt_aliceweb.png",
+      "href": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/01/consulta_bt_aliceweb.png",
+      "alt": "consulta_bt_aliceweb",
+      "caption": ""
+    },
+    {
+      "type": "html",
+      "html": "<p>e depois na parte de exportações até 2013:</p>"
+    },
+    {
+      "type": "figure",
+      "src": "projects/passo-a-passo-data-scraping-aliceweb/media/7112916f-aliceweb_expo.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/01/aliceweb_expo.png",
+      "href": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/01/aliceweb_expo.png",
+      "alt": "aliceweb_expo",
+      "caption": ""
+    },
+    {
+      "type": "html",
+      "html": "<p>A partir de então podemos começar a “gravar” a interação com o site para criar a automatização necessária para baixar os dados: clicando no ícone do iMacros</p>"
+    },
+    {
+      "type": "figure",
+      "src": "projects/passo-a-passo-data-scraping-aliceweb/media/a7790b6e-imacros.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/01/imacros.png",
+      "href": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/01/imacros.png",
+      "alt": "imacros",
+      "caption": ""
+    },
+    {
+      "type": "html",
+      "html": "<p>no canto superior direito do navegador e depois em</p>"
+    },
+    {
+      "type": "figure",
+      "src": "projects/passo-a-passo-data-scraping-aliceweb/media/bb7e993f-imacros_gravar.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/01/imacros_gravar.png",
+      "href": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/01/imacros_gravar.png",
+      "alt": "imacros_gravar",
+      "caption": ""
+    },
+    {
+      "type": "html",
+      "html": "<p>Em</p>"
+    },
+    {
+      "type": "figure",
+      "src": "projects/passo-a-passo-data-scraping-aliceweb/media/27e6b5b3-aliceweb_cesta.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/01/aliceweb_cesta.png",
+      "href": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/01/aliceweb_cesta.png",
+      "alt": "aliceweb_cesta",
+      "caption": ""
+    },
+    {
+      "type": "html",
+      "html": "<p>vamos adicionar os códigos 12019000 (“Soja, mesmo triturada, exceto para semeadura”) e 12010090 (“Outros grãos de soja, mesmo triturados”). Em “Porto” vamos selecionar “SANTOS” e em períodos, vamos adicionar 6 períodos, conforme a figura abaixo:</p>"
+    },
+    {
+      "type": "figure",
+      "src": "projects/passo-a-passo-data-scraping-aliceweb/media/e9a7edc9-aliceweb_periodos.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/01/aliceweb_periodos.png",
+      "href": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/01/aliceweb_periodos.png",
+      "alt": "aliceweb_periodos",
+      "caption": ""
+    },
+    {
+      "type": "html",
+      "html": "<p><br>\nApós clicar em consulta temos o seguinte resultado:<br>\n</p>"
+    },
+    {
+      "type": "figure",
+      "src": "projects/passo-a-passo-data-scraping-aliceweb/media/cac84a28-aliceweb_resultado1.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/01/aliceweb_resultado1.png",
+      "href": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/01/aliceweb_resultado1.png",
+      "alt": "aliceweb_resultado",
+      "caption": ""
+    },
+    {
+      "type": "html",
+      "html": "<p><br>\nA última ação gravada será clicar em “Refazer consulta” como se fôssemos começar novamente a consulta e alterar apenas os períodos após a qual podemos interromper a gravação clicando no símbolo do iMacros. O resultado dessa interação é o código disponibilizado <a href=\"https://dl.dropboxusercontent.com/u/38380383/soja-sts-exp.txt\">nesse link</a>. A ideia básica para conseguir automatizar a coleta de dados é entender como a interação com o site foi traduzida em um código e descobrir quais são as partes que podem ser transformadas em variáveis. Em primeiro lugar, temos a inclusão do código NCM dos produtos, associada as seguintes linhas:<br>\n<code><br>\nTAG POS=1 TYPE=INPUT:TEXT FORM=ID:frmConsulta ATTR=ID:valorNcmCesta CONTENT=12019000<br>\nTAG POS=1 TYPE=BUTTON FORM=ID:frmConsulta ATTR=ID:btnAddProduto<br>\n</code><br>\nOu seja, ao replicarmos essas duas linhas diversas vezes variando o trecho <code>CONTENT=12019000</code>, podemos incluir quantos itens forem desejados (até o limite de 60 itens). Em seguida, foi realizada a seleção do porto identificada por<br>\n<code><br>\nTAG POS=1 TYPE=SELECT FORM=ID:frmConsulta ATTR=ID:porto CONTENT=%4117<br>\n</code><br>\no que permite descobrir a identificação do porto de Santos na base de dados da AliceWeb (código 4117). Ao clicar nos diferentes Portos é possível coletar o número associado a cada um deles. Por fim a seleção dos períodos se dá através da definição do mês/ano inicial e final de cada um dos seis períodos. Por fim, adicionei três linhas referentes a extração dos dados cuja explicação encontra-se abaixo</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p><code>TAG POS=1 TYPE=TABLE ATTR=TXT:* EXTRACT=TXT</code> <strong>copia a tabela do resultado</strong><br>\n<code>SAVEAS TYPE=EXTRACT FOLDER=* FILE=soja-santos-exp.txt</code> <strong>salva a tabela com o resultado em um arquivo de texto</strong><br>\n<code>WAIT SECONDS=3</code> <strong>aguarda três segundos antes de recomeçar o código</strong></p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>A automatização dessa coleta de dados se dá através da replicação do código desde a primeira linha associada a seleção do período (linha 10 do bloco de notas) até a última linha, alterando apenas os meses e anos selecionados. Para realizar essa replicação o ideal é usar algum software familiar que permita que essa tarefa não seja também braçal (no meu caso criei uma máscara para o código no Excel, usando as células para inserir os anos e meses nas respectivas linhas). O resultado é a um <a href=\"https://dl.dropboxusercontent.com/u/38380383/aliceweb.txt\">bloco de notas (link)</a> com os dados dos períodos selecionados que podem ser inseridos no Excel (ou em algum outro software) e tratados.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>Enfim, a mensagem principal desse <em>post</em> é que embora seja recorrente a incompatibilidade entre a disponibilização de uma informação e o uso que queremos dar para ela, é possível encontrar ferramentas livres e simples que permitam atingir o objetivo desejado na coleta de dados. Como de costume, deixo abaixo um formulário para aqueles que quiserem maiores explicações ou maiores detalhes sobre a coleta desses dados.</p>"
+    }
+  ]
+}

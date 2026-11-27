@@ -1,0 +1,50 @@
+{
+  "id": 506,
+  "slug": "banksy-sao-paulo-e-a-bela-vista",
+  "title": "Banksy, São Paulo e a Bela Vista",
+  "date": "2014-11-19",
+  "url": "https://dataforthoughts.wordpress.com/2014/11/19/banksy-sao-paulo-e-a-bela-vista/",
+  "categories": [
+    "Dados Públicos",
+    "Mapas",
+    "R"
+  ],
+  "blocks": [
+    {
+      "type": "figure",
+      "src": "projects/banksy-sao-paulo-e-a-bela-vista/media/81ad848f-world_map.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/11/world_map.png",
+      "href": "http://www.dwtkns.com/density/",
+      "alt": "world_map",
+      "caption": ""
+    },
+    {
+      "type": "html",
+      "html": "<p>Recentemente vi essa visualização dos dados de densidade populacional do mundo, com uma perspectiva estética à la <a href=\"http://en.wikipedia.org/wiki/Banksy\">Banksy</a>. No <a href=\"http://www.dwtkns.com/density/\">mapa</a> é possível interagir com a visualização a partir do slider na parte superior da página, selecionando quais níveis de densidade populacional que serão destacadas.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>Resolvi reproduzir a abordagem e solução estética para visualizar os dados de densidade populacional do Censo 2010 da cidade de São Paulo (basta clicar na imagem para acessar o mapa interativo – ou <a href=\"https://dl.dropboxusercontent.com/u/38380383/post.html\">aqui</a>). Infelizmente, não cheguei no ponto de automatizar totalmente o processo (mais por preguiça que por dificuldade), mas cheguei bem próximo disso; a ideia é tornar automática a criação dessa visualização para qualquer município do Brasil.</p>"
+    },
+    {
+      "type": "figure",
+      "src": "projects/banksy-sao-paulo-e-a-bela-vista/media/ba26ac43-density_01100.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/11/density_01100.png",
+      "href": "https://dl.dropboxusercontent.com/u/38380383/post.html",
+      "alt": "density_01100",
+      "caption": ""
+    },
+    {
+      "type": "html",
+      "html": "<p>A lógica por trás dessa maneira de disponibilizar a informação é similar a de um projetor de cinema. O mapa consiste em uma única e comprida imagem com todas as visualizações possíveis para todos os níveis de densidade demográfica passíveis de seleção. Ao escolher um valor no <em>slider</em> acima do mapa, a programação por trás do mapa “corta” a figura no ponto exato correspondente ao nível selecionado (para ver a imagem inteira, basta clicar aqui); esse solução técnica permite que a visualização seja bastante rápida e eficiente.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>O mapa por sua vez, consegue criar a identidade visual do município de São Paulo sem tem que utilizar qualquer divisão territorial; a dificuldade que um paulistano possa vir a enfrentar ao tentar identificar as zonas mais densas pode ser atribuída ao pouco conhecimento que temos do nosso entorno (fiquei, inutilmente, comparando mapas de bairros e distritos tentando ver se adivinhava quais eram as áreas mais densas ou chegar a uma conclusáo – como, por exemplo, que a Bela Vista é um dos distritos mais densos da cidade). Dá para tentar comparar olhando outros mapas da cidade, como <a href=\"http://www.fflch.usp.br/centrodametropole/antigo/v1/mapoteca/download/RMSPdisDe7.jpg\">esse</a>.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>A visualização foi feita utilizando os dados do Censo 2010 do IBGE e o <a href=\"http://www.r-project.org/\">R</a>. Como de costume, deixo um formulário abaixo para aqueles que quiserem mais informações sobre a análise acima.</p>"
+    }
+  ]
+}

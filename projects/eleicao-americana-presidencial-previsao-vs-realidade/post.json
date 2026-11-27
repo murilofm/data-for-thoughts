@@ -1,0 +1,20 @@
+{
+  "id": 101,
+  "slug": "eleicao-americana-presidencial-previsao-vs-realidade",
+  "title": "Eleição presidencial americana: previsão vs realidade",
+  "date": "2012-11-07",
+  "url": "https://dataforthoughts.wordpress.com/2012/11/07/eleicao-americana-presidencial-previsao-vs-realidade/",
+  "categories": [
+    "Uncategorized"
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Um belo exemplo de análise estatística de alto nível. O gráfico abaixo compara a previsão de Nate Silver, do blog  <a href=\"http://fivethirtyeight.blogs.nytimes.com/\">fivethirtyeight</a>, para cada estado dos EUA e o resultado da eleição. Como bem colocado no <a href=\"http://flowingdata.com/2012/11/07/how-silver-predictions-performed/\">Flowing Data</a>, uma vitória de Obama e da estatística.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p><a href=\"https://biostat.jhsph.edu/~ririzarr/silver.png\">Imagem na fonte original</a></p>"
+    }
+  ]
+}

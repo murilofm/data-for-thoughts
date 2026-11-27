@@ -1,0 +1,30 @@
+{
+  "id": 1,
+  "slug": "debate-2-turno",
+  "title": "Debate do segundo turno – São Paulo",
+  "date": "2012-10-22",
+  "url": "https://dataforthoughts.wordpress.com/2012/10/22/debate-2-turno/",
+  "categories": [
+    "Eleições",
+    "Infográfico",
+    "Word cloud"
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Rápida análise quantitativa do discurso empregado por cada candidato no primeiro debate do segundo turno das eleições municipais de São Paulo, que ocorreu na quinta-feira (18/10/2012 –  22h30).</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>A transcrição do debate está disponível na web (utilizei a da Folha de São Paulo). O infográfico completo foi feito no Inkscape (<a href=\"http://inkscape.org/\">http://inkscape.org/</a>), mas utilizei o Wordle para o mapa de palavras (<a href=\"http://www.wordle.net/\">http://www.wordle.net/</a> – livre).</p>"
+    },
+    {
+      "type": "figure",
+      "src": "projects/debate-2-turno/media/fd56dec6-debate_2turno3.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2012/10/debate_2turno3.png",
+      "href": "https://dataforthoughts.wordpress.com/wp-content/uploads/2012/10/debate_2turno3.png",
+      "alt": "Análise quantitativa do 1º debate do 2º turno - São Paulo",
+      "caption": ""
+    }
+  ]
+}

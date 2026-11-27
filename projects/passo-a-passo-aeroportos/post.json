@@ -1,0 +1,63 @@
+{
+  "id": 154,
+  "slug": "passo-a-passo-aeroportos",
+  "title": "Passo-a-Passo: Infográfico Aeroportos",
+  "date": "2013-12-11",
+  "url": "https://dataforthoughts.wordpress.com/2013/12/11/passo-a-passo-aeroportos/",
+  "categories": [
+    "Dados Públicos",
+    "Infográfico",
+    "Passo-a-Passo",
+    "Vôos"
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>No <a href=\"https://dataforthoughts.wordpress.com/2013/12/03/aeroportos-partidas-e-retornos/\">post re-inaugural sobre atrasos em aeroportos</a>, levantei 4 etapas primárias para a confecção do infográfico que me custaram algumas horas:</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>1.i) Qual linguagem de programação utilizar para conseguir os dados?<br>\n1.ii) Onde armazenar o programa?<br>\n1.iii) Como fazer esse código rodar de hora em hora?<br>\n1.iv) Onde armazenar os dados?</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>Acabei explicando para algumas pessoas como superei essas questões, mas nada mais justo que democratizar o acesso à informação.<br>\nEm primeiro lugar é importante notar o denominador comum das quatro questões: o fato de não ter a menor ideia sobre como resolver esse problema. A resposta lógica para esse tipo de impasse é usualmente o Google, mas no caso de programação, funciona também pesquisar nos arquivos do <a href=\"http://stackoverflow.com/\">Stack Overflow</a> (o Stack Overflow é um site de perguntas e respostas direcionadas para programação) e de fato o <em>site</em> foi fundamental para conseguir superar o problema de coleta de dados.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p><strong>1.i) e 1.ii)</strong> Embora tenha alguma noção de programação, tenho pouca familiaridade com linguagens usualmente utilizadas para interação com websites e, portanto, esse era o ponto mais complicado. Abracei de cara a primeira solução que pareceu razoável, e por sorte suficiente: o <a href=\"https://developers.google.com/apps-script/\">Google Apps Script</a>. Conforme definido pelo site:</p>"
+    },
+    {
+      "type": "html",
+      "html": "<a href=\"https://dataforthoughts.wordpress.com/2013/12/11/passo-a-passo-aeroportos/\">Leia a citação na publicação original</a>"
+    },
+    {
+      "type": "html",
+      "html": "<p>Ou seja, a função primordial é a otimização do o uso das ferramentas já disponibilizadas pelo Google; mas é possível utilizá-lo para acessar websites e realizar algum tipo de interação com eles e, no meu caso, guardar informações relevantes. Bastava assim ter uma conta no Google, entrar no <a href=\"https://script.google.com/\">Script</a> e armazenar um código, sem a necessidade de instalar um programa ou usar um servidor.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>Usando o Stack Overflow descobri que a função <a href=\"https://developers.google.com/apps-script/reference/url-fetch/url-fetch-app\">UrlFetchApp</a> possibilita obter o código-fonte de qualquer página desejada de maneira que eu poderia “armazenar” a tabela de atrasos da Infraero uma vez que ela se encontra no meio desse código. Concretamente, o programa<br>\n<code><br>\nfunction main() {<br>\nvar url = &quot;http://www.google.com&quot;;<br>\nvar resp = UrlFetchApp.fetch(url).getContentText();<br>\n}<br>\n</code><br>\nsalvaria na variável <strong>resp</strong> o código-fonte da página principal do Google. Para os que não possuem familiaridade com o assunto, o código-fonte corresponde ao código html da página visitada, podendo ser obtido a partir do clique com o botão direito em qualquer página da web e da seleção da opção “código-fonte”.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p><strong>1.iii)</strong> Como disse, tive sorte da primeira solução ser suficiente para conseguir as informações do site da maneira que queria. Mais do que isso, o Google Apps Script possui uma funcionalidade chamada <a href=\"https://developers.google.com/apps-script/execution_time_triggers\">Time-driven triggers</a> que permite estabelecer “acionadores” para qualquer programa armazenado, permitindo que ele rode na periodicidade desejada (no meu caso, de hora em hora). Ou seja, em algumas horas encontrei soluções satisfatória para praticamente todos os problemas que pareciam intransponíveis para mim.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p><strong>1.iv)</strong> A última grande barreira era a armazenagem dos dados. Lembrando que a função principal do Google Apps Script é “<em>do new and cool things with Google Apps like Docs, Sheets, and Forms”,</em> percebi que a maneira mais simples seria armazenar o conteúdo da página da Infraero obtido com a função UrlFetchApp em uma planilha do Google Docs e tratá-lo futuramente no Excel. Embora não seja a maneira mais sofisticada (que provavelmente seria utilizar o javascript para selecionar o conteúdo exato que preciso e na organização mais funcional possível), armazenar o código-fonte da tabela correspondente a cada hora do dia em várias células foi suficiente para os meus propósitos.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>O resultado final foi um programa armazenado no meu Google Drive, que acessa, de hora em hora, a página dos <a href=\"http://www.infraero.gov.br/index.php/br/situacao-dos-voos/por-aeroporto.html\">atrasos dos aeroporto nacionais</a> e armazena a tabela disponível nessa página em uma nova célula de uma determinada planilha também armazenada no meu Google Drive. Ainda houve o trabalho final de realizar o tratamento dos dados e criar o infográfico; porém, mesmo sem entrar nesses detalhes acredito que a explicação acima já se configura como um estímulo para aqueles que quiserem realizar análises parecidas. Deixo abaixo um formulário para aqueles que quiserem maiores explicações ou maiores detalhes bem como o link para a versão mais atualizada do infográfico.</p>"
+    },
+    {
+      "type": "figure",
+      "src": "projects/passo-a-passo-aeroportos/media/62ced8db-dashboard_1.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2013/12/dashboard_1.png",
+      "href": "http://public.tableausoftware.com/views/Voos/Dashboard1?:embed=y&:display_count=no",
+      "alt": "Dashboard_1",
+      "caption": ""
+    }
+  ]
+}

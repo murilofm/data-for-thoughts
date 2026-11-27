@@ -1,0 +1,60 @@
+{
+  "id": 495,
+  "slug": "ilhas-e-eleicoes-shiny-r-qgis",
+  "title": "Ilhas e eleições (Shiny + R + QGIS)",
+  "date": "2014-11-05",
+  "url": "https://dataforthoughts.wordpress.com/2014/11/05/ilhas-e-eleicoes-shiny-r-qgis/",
+  "categories": [
+    "Eleições",
+    "Infográfico",
+    "Mapas",
+    "R",
+    "Shiny"
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Faz algum tempo que conheci o pacote <a href=\"http://shiny.rstudio.com/\">Shiny</a> e estava cogitando se produzia algo com ele. Para quem não conhece, o Shiny é uma estrutura desenvolvida pelo <a href=\"http://www.rstudio.com/\">RStudio</a> que torna muito fácil a criação de aplicações na web com o R. As notícias recentes sobre separatismo, as mensagens nas redes sociais e a sensação de falta alguma noção de perspectiva sobre o quão grande e heterogêneo é o país (em todos os aspectos) me levaram a criar esse <a href=\"https://murilofm.shinyapps.io/App-1/\">aplicativo</a> no R.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>A ideia é a seguinte: imagine um jogo de tabuleiro com o mapa dos municípios brasileiros cuja regra de movimentação é</p>"
+    },
+    {
+      "type": "html",
+      "html": "<blockquote><p>Dado um município inicial, só é possível se movimentar para um município vizinho caso a diferença da votação no segundo turno de 2014 entre o próximo município e o primeiro seja de até <b>X</b> %.</p></blockquote>"
+    },
+    {
+      "type": "html",
+      "html": "<p>A pergunta desse jogo é: quão longe você iria uma vez escolhido o município inicial e o valor de X? A resposta para São Paulo (SP) e 8% é a imagem abaixo:</p>"
+    },
+    {
+      "type": "figure",
+      "src": "projects/ilhas-e-eleicoes-shiny-r-qgis/media/ef45ba74-sp_8.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/11/sp_8.png",
+      "href": "https://murilofm.shinyapps.io/App-1/",
+      "alt": "sp_8",
+      "caption": ""
+    },
+    {
+      "type": "html",
+      "html": "<p>Já para Altamira (PA) e os mesmos 8% seria:</p>"
+    },
+    {
+      "type": "figure",
+      "src": "projects/ilhas-e-eleicoes-shiny-r-qgis/media/512913c7-altamira_8.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/11/altamira_8.png",
+      "href": "https://murilofm.shinyapps.io/App-1/",
+      "alt": "altamira_8",
+      "caption": ""
+    },
+    {
+      "type": "html",
+      "html": "<p>Para testar outras combinações de cidades e valores basta clicar em uma das imagens ou <a href=\"https://murilofm.shinyapps.io/App-1/\">aqui</a> (<b>ressalva:</b> se o valor escolhido for muito elevado o mapa demorará bastante para carregar). Meu propósito com esse mapa, além de ser o primeiro aplicativo com o Shiny, é levantar a dúvida sobre quão certos estamos das nossas convicções e escolhas dada a heterogeneidade de visões ao nosso redor. Ou apenas levantar a reflexão de que o seu bairro e sua timeline não devem ser, nem de perto, uma amostra representativa da população e da realidade do país.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>A confecção do aplicativo foi feita utilizando os resultados do <a href=\"http://www.tse.jus.br/eleicoes/estatisticas/repositorio-de-dados-eleitorais\">segundo turno</a>, o <a href=\"http://www.r-project.org/\">R</a> (com o pacote <a href=\"http://shiny.rstudio.com/\">Shiny</a>) e um pouco do QGIS (para levantar a lista de municípios vizinhos de cada município).</p>"
+    }
+  ]
+}

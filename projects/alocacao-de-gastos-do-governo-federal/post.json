@@ -1,0 +1,31 @@
+{
+  "id": 46,
+  "slug": "alocacao-de-gastos-do-governo-federal",
+  "title": "Você sabe como é a alocação de gastos do governo federal?",
+  "date": "2012-10-29",
+  "url": "https://dataforthoughts.wordpress.com/2012/10/29/alocacao-de-gastos-do-governo-federal/",
+  "categories": [
+    "Despesas Públicas",
+    "Governo",
+    "Impostos",
+    "Infográfico"
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Me inspirei em um post do <a href=\"http://blog.revolutionanalytics.com/\">Revolution Analytics</a> para fazer o infográfico abaixo. Não tem grandes revelações sobre a gestão do dinheiro público federal; porém, é uma maneira mais simples que as tabelas do orçamento de apresentar a divisão dos gastos.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>Como descrito na legenda, utilizei os dados do <a href=\"http://www9.senado.gov.br/portal/page/portal/orcamento_senado/SigaBrasil\">Siga Brasil</a> (Portal do Orçamento – Senado Federal) que disponibiliza os dados do orçamento de uma forma <em>user friendly</em>. Utilizei a própria divisão do orçamento por função que tem por objetivo retratar a distribuição setorial das despesas realizadas pelo governo (com a ressalva que esta divisão por vezes inclui gastos que não estão estritamente relacionados à área especificada). Também fiz uso do cálculo do <a href=\"http://www.impostometro.com.br/\">Impostômetro</a> sobre a quantidade de dias trabalhados para pagar os impostos. O infográfico foi feito no <a href=\"http://inkscape.org/\">Inkscape</a>.</p>"
+    },
+    {
+      "type": "figure",
+      "src": "projects/alocacao-de-gastos-do-governo-federal/media/be988ab9-gastos_publicos1.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2012/10/gastos_publicos1.png",
+      "href": "https://dataforthoughts.wordpress.com/wp-content/uploads/2012/10/gastos_publicos1.png",
+      "alt": "Alocação das despesas públicas federais",
+      "caption": ""
+    }
+  ]
+}

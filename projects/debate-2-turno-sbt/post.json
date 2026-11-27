@@ -1,0 +1,26 @@
+{
+  "id": 29,
+  "slug": "debate-2-turno-sbt",
+  "title": "Segundo debate do segundo turno – São Paulo (SBT)",
+  "date": "2012-10-24",
+  "url": "https://dataforthoughts.wordpress.com/2012/10/24/debate-2-turno-sbt/",
+  "categories": [
+    "Eleições",
+    "Infográfico",
+    "Word cloud"
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Análise quantitativa do discurso empregado por cada candidato no segundo debate do segundo turno das eleições municipais de São Paulo, que ocorreu quarta-feira (24/10/2012 – 18h30).<br>\nNovamente, utilizei a transcrição do debate da Folha de São Paulo, o Inkscape (<a href=\"http://inkscape.org/\">http://inkscape.org/</a>) para fazer o infográfico e o Wordle para o mapa de palavras (<a href=\"http://www.wordle.net/\">http://www.wordle.net/</a> – livre).</p>"
+    },
+    {
+      "type": "figure",
+      "src": "projects/debate-2-turno-sbt/media/f8653a1b-debate_2turno-sbt1.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2012/10/debate_2turno-sbt1.png",
+      "href": "https://dataforthoughts.wordpress.com/wp-content/uploads/2012/10/debate_2turno-sbt1.png",
+      "alt": "Análise quantitativa do 2º debate (SBT) do 2º turno - São Paulo",
+      "caption": ""
+    }
+  ]
+}

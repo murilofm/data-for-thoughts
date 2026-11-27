@@ -1,0 +1,17 @@
+{
+  "id": 146,
+  "slug": "mais-sobre-aeroportos",
+  "title": "Mais sobre aeroportos",
+  "date": "2013-12-04",
+  "url": "https://dataforthoughts.wordpress.com/2013/12/04/mais-sobre-aeroportos/",
+  "categories": [
+    "Infográfico",
+    "Vôos"
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Coincidentemente, o <a href=\"http://flowingdata.com/2013/12/03/miserymap-of-current-flight-delays-and-cancelations/\">Flowing Data</a> publicou ontem um <a href=\"http://pt.flightaware.com/miserymap/\">link para um mapa de atrasos e cancelamentos</a> nos aeroportos dos Estados Unidos (bastante parecido com o que fiz e bem mais próximo do que eu pretendia fazer não fosse as limitações técnicas). O mapa é bem leve e fácil de usar, mostrando inclusive a direção dos fluxos entre aeroportos.<br>\nAinda na temática aeroportuária, o <a href=\"http://www.tableausoftware.com/public/gallery/look-nation039s-top-100-airport\">Viz of the Day do Tableau Public</a> de ontem também foi uma mapa dos aeroportos americanos, nesse caso com foco nos preços das passagens aéreas.</p>"
+    }
+  ]
+}

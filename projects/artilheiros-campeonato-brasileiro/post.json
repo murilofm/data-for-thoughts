@@ -1,0 +1,30 @@
+{
+  "id": 80,
+  "slug": "artilheiros-campeonato-brasileiro",
+  "title": "Artilheiros do Campeonato Brasileiro (2010-2012)",
+  "date": "2012-10-31",
+  "url": "https://dataforthoughts.wordpress.com/2012/10/31/artilheiros-campeonato-brasileiro/",
+  "categories": [
+    "Brasileirão",
+    "Futebol",
+    "Infográfico"
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Particularmente, não sou um profundo conhecedor de futebol. Mas guardei a vontade de fazer um infográfico sobre esporte quando aprendi a criar um <a href=\"http://en.wikipedia.org/wiki/Heat_map\"><em>heatmap</em></a> no <a href=\"http://www.r-project.org/\">R</a> a partir de um post do <a href=\"http://flowingdata.com/2010/01/21/how-to-make-a-heatmap-a-quick-and-easy-solution/\">Flowing Data</a> sobre os atletas da NBA. Como em diversas áreas, o Brasil ainda não é um primor na quantidade nem no acesso aos dados sobre futebol. Mas consegui juntar rapidamente algumas informações sobre os quatro primeiro artilheiros do brasileirão (há casos de empate e por isso mais de quatro jogadores ). Cada coluna apresenta uma característica e a intensidade da cor está vinculada ao quanto determinado jogador se diferencia, nesta variável, em relação aos demais listados. Em relação ao campeonato de 2012, usei os dados disponíveis até o momento (31/10/2012).</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>Fiz o heatmap no <a href=\"http://www.r-project.org/\">R</a> e ajustei o infográfico no <a href=\"http://inkscape.org/\">Inkscape</a>.</p>"
+    },
+    {
+      "type": "figure",
+      "src": "projects/artilheiros-campeonato-brasileiro/media/d715dd6a-brasileiro.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2012/10/brasileiro.png",
+      "href": "https://dataforthoughts.wordpress.com/wp-content/uploads/2012/10/brasileiro.png",
+      "alt": "Artilheiros do Campeonato Brasileiro",
+      "caption": ""
+    }
+  ]
+}

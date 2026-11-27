@@ -1,0 +1,62 @@
+{
+  "id": 196,
+  "slug": "series-temporais-bacen",
+  "title": "Séries Temporais do Bacen no Excel",
+  "date": "2013-12-26",
+  "url": "https://dataforthoughts.wordpress.com/2013/12/26/series-temporais-bacen/",
+  "categories": [
+    "Dados Públicos",
+    "Excel",
+    "Passo-a-Passo"
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Esse post é um pouco mais árido que os anteriores e provavelmente não interessará a tantas pessoas. Mas como gastei um bom tempo para conseguir criar uma função no Excel que baixasse automaticamente valores específicos de séries do site do Banco Central, resolvi compartilhar aqui a solução. A macro é bastante simples e é possível que haja uma maneira mais elegante de realizar essa tarefa; porém, foi o melhor que consegui fazer. </p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>O ponto de partida dessa tarefa foi minha impaciência em relação ao site de <a href=\"https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries\">Séries Temporais do Banco Central</a> (o site é excelente, mas ficar exportando csv e importando para outras planilhas do Excel com certa frequência causa algum desconforto). E meu desconforto com o site era ainda maior porque na página inicial do site de Séries Temporais há a seguinte frase:</p>"
+    },
+    {
+      "type": "html",
+      "html": "<blockquote><p>As séries podem ser consultadas individualmente, em grupos ou listas personalizadas, <strong>ou de forma automática, de acordo com as instruções constantes no menu Ajuda, submenu Ajuda do sistema, opção Serviços automatizados (webservices).</strong> (grifo meu)</p></blockquote>"
+    },
+    {
+      "type": "html",
+      "html": "<p>Ou seja, a barreira entre a maneira eficiente de trabalhar com esses dados no Excel (leia-se automatizada) e a que eu estava acostumado tinha nome: <strong>Web services</strong>. Segundo o <a href=\"http://pt.wikipedia.org/wiki/Web_service\">Wikipedia</a> “Web service é uma solução utilizada na integração de sistemas e na comunicação entre aplicações diferentes.” Portanto, nada mais é que uma solução que possibilita a comunicação entre aplicações distintas, permitindo que uma faça um “pedido” para outra e receba uma resposta em uma linguagem padronizada (esse <a href=\"http://acs.lbl.gov/projects/gtg/projects/pyGridWare/doc/tutorial/html/x284.html\">link</a> possui uma boa explicação do serviço). Asim, meu objetivo era conseguir que o Excel se comunicasse com o serviço do Banco Central e esse “pedido” retornasse o valor da série requisitada. Após algumas boas horas de pesquisa cheguei na macro abaixo:</p>"
+    },
+    {
+      "type": "html",
+      "html": "<code><br>\nPublic Function getValor(oidSerie As Integer, dataReferencia As Date)<br>\nDim sURL As String<br>\nDim sEnv As String<br>\nDim xmlhtp As New MSXML2.XMLHTTP60<br>\nDim xmlDoc As New DOMDocument60<br>\nsURL = &quot;https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS?method=getValor&quot;</code><br>\n<code><br>\nsEnv = &quot;&lt;?xml version=&quot;&quot;1.0&quot;&quot; encoding=&quot;&quot;utf-8&quot;&quot;?&gt;&quot;<br>\nsEnv = sEnv &amp; &quot;&lt;soapenv:Envelope xmlns:soapenv=&quot;&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&quot; xmlns:xsd=&quot;&quot;http://www.w3.org/2001/XMLSchema&quot;&quot; xmlns:xsi=&quot;&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&quot;&gt;&quot;<br>\nsEnv = sEnv &amp; &quot; &lt;soapenv:Body&gt;&quot;<br>\nsEnv = sEnv &amp; &quot; &lt;getValor xmlns=&quot;&quot;https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS&quot;&quot;&gt;&quot;<br>\nsEnv = sEnv &amp; &quot; &lt;codigoSerie&gt;&quot; &amp; oidSerie &amp; &quot;&lt;/codigoSerie&gt;&quot;<br>\nsEnv = sEnv &amp; &quot; &lt;data&gt;&quot; &amp; dataReferencia &amp; &quot;&lt;/data&gt;&quot;<br>\nsEnv = sEnv &amp; &quot; &lt;/getValor&gt;&quot;<br>\nsEnv = sEnv &amp; &quot; &lt;/soapenv:Body&gt;&quot;<br>\nsEnv = sEnv &amp; &quot;&lt;/soapenv:Envelope&gt;&quot;</code><br>\n<code><br>\nWith xmlhtp<br>\n.Open &quot;post&quot;, sURL, False<br>\n.setRequestHeader &quot;Host&quot;, &quot;https://www3.bcb.gov.br/sgspub/JSP/sgsgeral/FachadaWSSGS.wsdl&quot;<br>\n.setRequestHeader &quot;Content-Type&quot;, &quot;text/xml; charset=utf-8&quot;<br>\n.setRequestHeader &quot;soapAction&quot;, &quot;https://www3.bcb.gov.br/wssgs/services/FachadaWSSGS/getValor&quot;<br>\n.setRequestHeader &quot;Accept-encoding&quot;, &quot;zip&quot;<br>\n.send sEnv<br>\nxmlDoc.LoadXML .responseText<br>\nEnd With<br>\n<code><br>\nSet NodeList = xmlhtp.responseXML.SelectSingleNode(&quot;//multiRef&quot;)<br>\n<code><br>\ngetValor = NodeList.Text * 1<br>\n&#x27; Selection = Selection.value<br>\n<code><br>\nEnd Function<br>\n</code></code></code></code>"
+    },
+    {
+      "type": "html",
+      "html": "<p>A macro utiliza um dos serviços diponibilizados pelo Bacen, cuja lista completa está <a href=\"https://www3.bcb.gov.br/sgspub/JSP/sgsgeral/sgsAjuda.jsp\">aqui</a>. Mais especificamente, criei uma função chamada <strong>getValor </strong> que retorna o valor de uma série em uma determinada data, sendo os seguintes parâmetros necessários para a função:</p>"
+    },
+    {
+      "type": "html",
+      "html": "<ul>\n<li>long codigoSerie – Código da série pesquisada.</li>\n<li>String data – String contendo a data (dd/MM/aaaa) do valor a ser pesquisado.</li>\n</ul>"
+    },
+    {
+      "type": "html",
+      "html": "<p>Na macro acima, esses valores são armazenados para a realização do <em>request</em> nos trechos <em>sEnv = sEnv &amp; ” &lt;codigoSerie&gt;” &amp; oidSerie &amp; “&lt;/codigoSerie&gt;”</em> e<br>\n<em>sEnv = sEnv &amp; ” &lt;data&gt;” &amp; dataReferencia &amp; “&lt;/data&gt;”</em>. Para que a macro funcione no Excel é necessário seguir os seguintes passos (com a ressalva de que testei no 2007 e no 2010):</p>"
+    },
+    {
+      "type": "html",
+      "html": "<ol>\n<li>Abra uma nova planilha de Excel e cole o código acima no Visual Basic (para abrir o Visual Basic basta apertar alt+F11 ou ir na aba “Desenvolvedor” e clicar em Visual Basic; caso a aba não esteja disponível siga os passos desse <a href=\"http://office.microsoft.com/pt-br/excel-help/mostrar-a-guia-desenvolvedor-HA101819080.aspx\">link</a>). O código deverá ser colado em um módulo do Visual Basic (“Inserir&gt;&gt; Módulo”).</li>\n<li>No Visual Basic clique em “Ferramentas&gt;&gt; Referências” e habilite a referência “Microsoft XML, v6.0”. Salve o arquivo como planilha habilitada para macro.</li>\n</ol>"
+    },
+    {
+      "type": "html",
+      "html": "<p>Em teoria, isto deveria ser suficiente para que a função funcionasse. Para testá-la basta escrever em qualquer célula do Excel a seguinte fómula: <strong>=getValor(4380;”18/06/2011″)</strong>. Nesse caso, a função buscaria o valor da série 4380 – <em>PIB mensal – Valores correntes (R$ milhões)</em> – na data 18-jun-2011, retornando o valor 358.007,80. É possível escolher qualquer outra combinação par série-data que a fórmula retornará o valor procurado (desde que ele esteja disponível no site do Banco Central). O ponto negativo dessa solução é o <em>lag</em> associado ao carregamento do dado (devido ao <em>service request</em> realizado), tornando a planilha um pouco lenta. Por conta disso, o ideal é armazenar a maior quantidade de dados como valor (sem fórmula), mantendo apenas os últimos valores da série com vínculo.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>Por fim, deixo abaixo um formulário para aqueles que quiserem maiores explicações sobre o funcionamento do código (tentarei ajudar no que for possível) e dois links que mais me ajudaram entre aqueles que consultei.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p><em>PS: Em tempo, coloco duas considerações levantadas por pessoas que utilizaram esta função no Excel.  A primeira, é que talvez seja necessário importar a cadeia de certificados do Banco Central, que pode ser encontrada na página <a href=\"http://www.bcb.gov.br/?CERTDIG\">http://www.bcb.gov.br/?CERTDIG</a>. A segunda, é que as séries do Banco Central estão formatadas com o “.” como separador decimal e, portanto, pode ser que o número de casas decimais venham sem formatação. No meu caso, não tive nenhum problema e acredito que a solução simples sejam mudar o separador decimal e de milhar.<br>\n</em><br>\n<a href=\"https://github.com/arademaker/IR-2011/blob/master/aula-07/roteiro.R\">Roteiro em R para utilizar do Web service do Banco Central</a><br>\n<a href=\"http://www.vbaexpress.com/forum/showthread.php?34354-How-to-use-WSDL-SOAP-to-Get-Forex-Rates-into-Excel\">Exemplo de uso de Web services no Excel</a></p>"
+    }
+  ]
+}

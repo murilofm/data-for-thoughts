@@ -1,0 +1,25 @@
+{
+  "id": 25,
+  "slug": "eleicao-presidencial-americana-2012",
+  "title": "Eleição presidencial americana (2012)",
+  "date": "2012-10-24",
+  "url": "https://dataforthoughts.wordpress.com/2012/10/24/eleicao-presidencial-americana-2012/",
+  "categories": [
+    "Eleições",
+    "Infográfico"
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p><a href=\"http://reconstitution2012.com/\">Reconstitution 2012</a> traz uma análise dos debates da eleição presidencial americana, com efeitos visuais relacionados à repetição de palavras, uso de termos negativos/positivos:</p>"
+    },
+    {
+      "type": "html",
+      "html": "<a href=\"https://dataforthoughts.wordpress.com/2012/10/24/eleicao-presidencial-americana-2012/\">Leia a citação na publicação original</a>"
+    },
+    {
+      "type": "html",
+      "html": "<a href=\"https://www.youtube.com/embed/vWk5an4G0i0?version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en&amp;autohide=2&amp;wmode=transparent\">YouTube video player</a>"
+    }
+  ]
+}

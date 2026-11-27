@@ -1,0 +1,42 @@
+{
+  "id": 123,
+  "slug": "aeroportos-partidas-e-retornos",
+  "title": "Aeroportos, partidas e retornos",
+  "date": "2013-12-03",
+  "url": "https://dataforthoughts.wordpress.com/2013/12/03/aeroportos-partidas-e-retornos/",
+  "categories": [
+    "Dados Públicos",
+    "Infográfico",
+    "Vôos"
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Com um <em>delay</em> de mais de um ano, retomo com a esperança de atualizar o blog com certa frequência. Há duas razões principais para o retorno. Primeiro, há uma quantidade enorme de dados disponíveis subutilizados. Na minha opinião, isso deriva tanto da forma pouco eficiente de disponibilizá-los (tanto no sentido de disponibilizá-los de maneira inadequada quanto de dar pouca publicidade a eles) como da pouca familiaridade com ferramentas para análise dos mesmos. Esse segundo ponto se traduz na segunda razão para o retorno: há uma infinidade de maneiras de conseguir dados e tratá-los. Apesar de não ser especialista nem na análise dos dados nem na prospecção dos mesmos, se conseguir compartilhar parte das ferramentas que fui descobrindo (e for) e motivar alguma análise subsequente, terei atingido meu principal objetivo com a criação do blog.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>Para (re)iniciar, compartilho um infográfico com dados de atrasos em vôos domésticos nos principais aeroportos brasileiros. Por algum tempo quis fazer algo com esses dados, mas isso só foi possível após a superação das seguintes etapas:</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p><strong>1) Prospecção dos dados:</strong> A <a href=\"http://www.infraero.gov.br/index.php/br/situacao-dos-voos/por-aeroporto.html\">Infraero disponibiliza de hora em hora</a> uma tabela com o número de vôos por aeroportos e a quebra entre atrasados (até aquela hora do dia), atrasados na última hora e cancelados. Porém, criar uma série histórica com dados disponibilizados apenas pontualmente pela Infraero envolveu pensar e resolver as questões abaixo:<br>\n1.i) Qual linguagem de programação utilizar para conseguir os dados?<br>\n1.ii) Onde armazenar o programa?<br>\n1.iii) Onde armazenar os dados?<br>\n1.iv) Como fazer esse código rodar de hora em hora?<br>\n<strong>2) Tratamento e visualização dos dados:</strong> superada a etapa de conseguir as informações, o passo final era a apresentação dos dados de maneira clara. A ideia foi conseguir compatibilizar uma informação que é temporal (informação, de hora em hora, sobre os aeroportos) e outra que é espacial (aeroportos distribuídos pelo país).</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>O resultado desse exercício é a imagem abaixo; a <strong>imagem possui um link</strong> para o infográfico completo no qual é possível selecionar horários diferentes no <em>slider</em> localizado no canto inferior esquerdo. O infográfico apresenta o número de vôos atrasados por aeroporto no país. Cada aeroporto está representado por um círculo, e seu tamanho está associado a quantidade de atrasos. Além disso, o círculo assume a cor vermelha caso o número de atrasos esteja aumentando e azul se estiver diminuindo (em relação ao período anterior ao selecionado). O gráfico de barras no canto direito superior apresenta os aeroportos com maior número de atrasos e o gráfico de bolhas o número de vôos dos principais aeroportos.</p>"
+    },
+    {
+      "type": "figure",
+      "src": "projects/aeroportos-partidas-e-retornos/media/62ced8db-dashboard_1.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2013/12/dashboard_1.png",
+      "href": "http://public.tableausoftware.com/views/Voos/Dashboard1?:embed=y&:display_count=no",
+      "alt": "Dashboard_1",
+      "caption": ""
+    },
+    {
+      "type": "html",
+      "html": "<p>Enfim, de tempos em tempos vou atualizar a série histórica para colocar mais dados no infográfico (é possível baixar os dados brutos a partir do link no centro, na parte inferior). Um trabalho interessante seria coletar os dados de cada companhia aérea, junto com as informação sobre origem e destino e as condições meteorológicas, e tentar identificar a existência (ou não) de algum tipo de efeito em cadeia nos atrasos. Nesse gráfico é possível ver alguns momentos em que ocorre uma proliferação dos atrasos, mas a interferência de um aeroporto em outro é pura suposição (o ideal seria que a mudança no período selecionado fosse mais rápida e que fosse possível testar a dependência da pontualidade dos vôos entre aeroportos). A título de informação, a apresentação dos dados foi feita usando o <a href=\"http://www.tableausoftware.com/public/\">Tableau Public</a>.</p>"
+    }
+  ]
+}

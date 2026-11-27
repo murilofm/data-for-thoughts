@@ -1,0 +1,16 @@
+{
+  "id": 243,
+  "slug": "foreign-key-1",
+  "title": "Foreign key [1]",
+  "date": "2014-01-16",
+  "url": "https://dataforthoughts.wordpress.com/2014/01/16/foreign-key-1/",
+  "categories": [
+    "Uncategorized"
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Como é difícil manter a frequência de publicações “originais”, vou iniciar no blog a referência a outras fontes de informação. Todas as publicações desse tipo terão o título acima (<a href=\"http://en.wikipedia.org/wiki/Foreign_key\">Foreign Key</a>). O primeiro link é para o site <a href=\"http://pac-info.herokuapp.com/map.html\">PAC Info</a>, um dos vencedores do <a href=\"http://2.encontro.dados.gov.br/concurso.html\">Concurso Nacional de Dados Abertos</a>, que traz uma visualização bem legal das obras do PAC, com detalhes sobre o valor contratado e estágio atual da obra.</p>"
+    }
+  ]
+}

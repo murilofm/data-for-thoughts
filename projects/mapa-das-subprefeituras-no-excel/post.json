@@ -1,0 +1,34 @@
+{
+  "id": 187,
+  "slug": "mapa-das-subprefeituras-no-excel",
+  "title": "Mapa das subprefeituras no Excel",
+  "date": "2013-12-17",
+  "url": "https://dataforthoughts.wordpress.com/2013/12/17/mapa-das-subprefeituras-no-excel/",
+  "categories": [
+    "Dados Públicos",
+    "Excel",
+    "Mapas"
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Trabalhar com mapas, dados e apresentações sempre envolve alguma dificuldade decorrente da utilização de múltiplos softwares para realizar cada um das tarefas relacionadas à criação das imagens. Apenas considerando os mapas, existem diversos programas, alguns pagos outros de graça, para as mais diversas finalidades e com uma vasta gama de complexidade. Eu recorro invariavelmente ao <a href=\"http://www.openjump.org/\">OpenJump</a> que é fácil de instalar e usar. Mas apesar da diversidade, na maior parte das vezes o que queremos é uma visualização rápida de alguns dados em um mapa simples e quase sempre os dados estão em uma planilha.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>Há algum tempo me deparei com esse <a href=\"http://www.clearlyandsimply.com/clearly_and_simply/2009/07/choropleth-map-template-brazil.html\">link</a> que preenchia exatamente essa lacuna: um mapa dos estados brasileiros em excel. O mapa é colorido a partir de uma macro que utiliza uma escala de transparência para a cor escolhida, sendo essa escala associada aos dados que estão sendo visualizados (quanto maior o número mais intensa é a cor – i.e., menor a transparência associada a um determinado estado). Seguindo a mesma lógica (depois descobri que o mesmo site possui um <a href=\"http://www.clearlyandsimply.com/clearly_and_simply/2009/08/build-your-own-choropleth-maps-with-excel.html\">passo-a-passo para criar mapas de Excel</a> a partir de <a href=\"http://pt.wikipedia.org/wiki/Shapefile\">shapefiles</a>), criei uma <a href=\"https://www.dropbox.com/s/7a0jmixzqywzwi2/SubprefeiturasSAO.xlsm\">planilha com um mapa das subprefeituras</a> do município de São Paulo. Para criar uma visualização do mapa a partir de um conjunto novo de dados, basta adicionar os dados correspondente a cada subprefeitura na aba “Dados”, clicar no botão atualizar da aba “Mapa” e depois selecionar o dado no seletor no canto superior esquerdo dessa mesma aba. É possível alterar a cor do mapa selecionando uma nova cor no botão “Escolher cor (mapa/gráfico)”. Na figura abaixo, exibi o “Valor Geral de Vendas dos Lançamentos Residenciais Verticais”, dividido pela “Área Total Lançada (em m²) dos Lançamentos Residenciais Verticais”, obtidos no site <a href=\"http://infocidade.prefeitura.sp.gov.br/\">Infocidade</a> da Prefeitura São Paulo.</p>"
+    },
+    {
+      "type": "figure",
+      "src": "projects/mapa-das-subprefeituras-no-excel/media/84f0d1e9-subprefeitura1.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2013/12/subprefeitura1.png",
+      "href": "https://dataforthoughts.wordpress.com/wp-content/uploads/2013/12/subprefeitura1.png",
+      "alt": "Subprefeitura",
+      "caption": ""
+    },
+    {
+      "type": "html",
+      "html": "<p>Deixo abaixo um formulário para aqueles que quiserem maiores explicações sobre o funcionamento da planilha:</p>"
+    }
+  ]
+}

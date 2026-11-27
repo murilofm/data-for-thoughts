@@ -1,0 +1,40 @@
+{
+  "id": 476,
+  "slug": "mapas-eleicoes-e-polemicas-r-scapetoad-gis",
+  "title": "Mapas, eleições e polêmicas (R + ScapeToad + GIS)",
+  "date": "2014-10-28",
+  "url": "https://dataforthoughts.wordpress.com/2014/10/28/mapas-eleicoes-e-polemicas-r-scapetoad-gis/",
+  "categories": [
+    "Uncategorized"
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Não é de hoje que tenho levantado o problema com representações cartográficas dos resultados eleitorais que utilizam alguma escala de cor considerando apenas a variável binária V ∈ {0;1} (vitória ou derrota); tratei do tema <a href=\"https://dataforthoughts.wordpress.com/2014/10/15/eleicoes-2010-2014-sao-paulo/\">aqui</a> e <a href=\"https://dataforthoughts.wordpress.com/2014/05/14/eleicoes-sp-mapas-r-ggmap/\">aqui</a>. Com o recente, e apertado, resultado da eleição presidencial o tema voltou a ficar em voga, com ranço de separatismo e falsas percepções sobre uma suposta divisão territorial dos votos no país.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>É importante lembrar que os mapas eleitorais evoluíram muito nos últimos tempos e o simplismo em analisar geograficamente os resultados não pode ser atribuído à falta de informação disponível. Para elencar alguns, o <a href=\"http://infograficos.oglobo.globo.com/brasil/resultado-municipio-eleicoes-segundo-turno.html\">globo.com</a> mostra o resultado eleitoral em cada município e o <a href=\"http://www.estadao.com.br/infograficos/os-sete-mitos-das-eleicoes-2014,271980.htm\">estadao (Os sete mitos das eleições 2014)</a> elenca alguns dos mitos criados durante e após a eleição, trazendo dados e visualizações que ajudam a refutá-los. Essas fontes já são suficientes para descaracterizar qualquer análise simplista sobre a divisão dos votos no Brasil; além dessas vale citar a imagem do blog do <a href=\"http://thomasconti.blog.br/2014/contra-o-preconceito-o-resultado-ponderado-das-eleicoes-por-estado/\">Thomas Conti</a>, que tem circulado bastante pelas redes sociais, e esse outro <a href=\"https://pbs.twimg.com/media/B09VPMRIcAA3vp-.jpg\">mapa</a> (não sei a fonte) como boas referências contra a visão do país dividido.</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>Acho que o conjunto de informação é suficientemente grande para evitar percepções distorcidas da realidade; na verdade, essas percepções só se justificam por algum conceito prévio, enraizado e provavelmente equivocado sobre a estrutura política do país. A esta altura da discussão já deveria estar claro que nenhum representante se elege com apenas uma determinada região ou classe social, muito embora tais agregações sirvam para analisar a disputa e entender como a vitória ocorreu. Para contribuir com o tema, deixo abaixo uma <a href=\"https://fea8d0730ff2f4cb71e23581b079cd8194a8cc91-www.googledrive.com/host/0B1nuI_FiZnnlQmJuU2VqWW9FM3c/post.html\">visualização</a> (<b>clique na imagem para acessar o mapa</b>) que mistura a ideia de <a href=\"http://en.wikipedia.org/wiki/Cartogram\">cartograma</a> (representação em que os polígonos são distorcidos para representar uma de suas características – no caso, o número total de votos válidos) com <a href=\"http://en.wikipedia.org/wiki/Dot_distribution_map\">Dot Density Map</a>:</p>"
+    },
+    {
+      "type": "figure",
+      "src": "projects/mapas-eleicoes-e-polemicas-r-scapetoad-gis/media/63176943-front_eleicao_2turno.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2014/10/front_eleicao_2turno.png",
+      "href": "https://fea8d0730ff2f4cb71e23581b079cd8194a8cc91-www.googledrive.com/host/0B1nuI_FiZnnlQmJuU2VqWW9FM3c/post.html",
+      "alt": "front_eleicao_2turno",
+      "caption": ""
+    },
+    {
+      "type": "html",
+      "html": "<p>O mapa reforça a ideia de que é necessário ter votos em todos os estados e regiões e que a representação visual binária (vitória ou derrota de determinado partido em determinado Estado) esconde a complexidade associada às eleições e distorce a informação com viés para os estados com maior área (e não necessariamente com maior número de eleitores).</p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>A construção do mapa foi similar a do <a href=\"https://dataforthoughts.wordpress.com/2014/10/15/eleicoes-2010-2014-sao-paulo/\">post sobre a distribuição dos votos do primeiro turno em São Paulo</a>; a única diferença foi que usei o <a href=\"http://scapetoad.choros.ch/\">ScapeToad</a> para criação do cartograma. Como de costume, deixo um formulário abaixo para aqueles que quiserem mais informações sobre a análise acima.</p>"
+    }
+  ]
+}

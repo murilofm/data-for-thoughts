@@ -1,0 +1,26 @@
+{
+  "id": 93,
+  "slug": "transito-em-sao-paulo",
+  "title": "Veículos em São Paulo",
+  "date": "2012-11-05",
+  "url": "https://dataforthoughts.wordpress.com/2012/11/05/transito-em-sao-paulo/",
+  "categories": [
+    "Infográfico",
+    "São Paulo",
+    "Trânsito"
+  ],
+  "blocks": [
+    {
+      "type": "html",
+      "html": "<p>Há algum tempo fiz o quadro abaixo reunindo algumas estatísticas sobre o trânsito em São Paulo. Não reúne todos os dados, mas procurei dividir nos dois quadros duas informações relevantes: a relação deslocamento-número de veículos e acidentes fatais. Para quem já havia visto o primeiro, apenas atualizei os dados. Quem quiser mais informações sobre o assunto a <a href=\"https://dataforthoughts.wordpress.com/2012/11/05/transito-em-sao-paulo/nossasaopaulo.org.br\">rede Nossa São Paulo</a> e o <a href=\"http://www.cetsp.com.br/consultas/seguranca-e-fluidez/acidentes-de-transito-fatais-relatorio-anual-2011.aspx\">relatório de acidentes fatais da CET</a> trazem bastante informação sobre o tema. A mensagem de qualquer estatística de trânsito de São Paulo é geralmente desalentadora.</p>"
+    },
+    {
+      "type": "figure",
+      "src": "projects/transito-em-sao-paulo/media/2b96acb4-transito_saopaulo.png",
+      "source": "https://dataforthoughts.wordpress.com/wp-content/uploads/2012/10/transito_saopaulo.png",
+      "href": "https://dataforthoughts.wordpress.com/wp-content/uploads/2012/10/transito_saopaulo.png",
+      "alt": "Dados sobre o trânsito na cidade de São Paulo",
+      "caption": ""
+    }
+  ]
+}
