@@ -4,7 +4,7 @@
 
 Compare o perfil dos principais goleadores do Brasileirão de 2010, 2011 e parte de 2012.
 
-**Edição publicada** · Publicação histórica com fontes preservadas
+**Edição publicada** · Visualização reconstruída
 
 
 
@@ -16,6 +16,7 @@ Compare o perfil dos principais goleadores do Brasileirão de 2010, 2011 e parte
 - [Página publicada](index.html)
 - [dados.json](dados.json)
 - [media](media/)
+- [view.js](view.js)
 
 ## Executar
 

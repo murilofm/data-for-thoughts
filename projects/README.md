@@ -24,9 +24,9 @@ Cada publicação tem sua própria página, fontes e arquivos de análise.
 | 2013-12-04 | [Mais sobre aeroportos](mais-sobre-aeroportos/) | Referência comentada |
 | 2013-12-03 | [Aeroportos, partidas e retornos](aeroportos-partidas-e-retornos/) | Publicação histórica com fontes preservadas |
 | 2012-11-07 | [Eleição presidencial americana: previsão vs realidade](eleicao-americana-presidencial-previsao-vs-realidade/) | Referência comentada |
-| 2012-11-05 | [Veículos em São Paulo](transito-em-sao-paulo/) | Publicação histórica com fontes preservadas |
-| 2012-10-31 | [Artilheiros do Campeonato Brasileiro (2010-2012)](artilheiros-campeonato-brasileiro/) | Publicação histórica com fontes preservadas |
-| 2012-10-29 | [Você sabe como é a alocação de gastos do governo federal?](alocacao-de-gastos-do-governo-federal/) | Publicação histórica com fontes preservadas |
+| 2012-11-05 | [Veículos em São Paulo](transito-em-sao-paulo/) | Visualização reconstruída |
+| 2012-10-31 | [Artilheiros do Campeonato Brasileiro (2010-2012)](artilheiros-campeonato-brasileiro/) | Visualização reconstruída |
+| 2012-10-29 | [Você sabe como é a alocação de gastos do governo federal?](alocacao-de-gastos-do-governo-federal/) | Visualização reconstruída |
 | 2012-10-24 | [Segundo debate do segundo turno – São Paulo (SBT)](debate-2-turno-sbt/) | Visualização reconstruída |
 | 2012-10-24 | [Eleição presidencial americana (2012)](eleicao-presidencial-americana-2012/) | Referência comentada |
 | 2012-10-22 | [Debate do segundo turno – São Paulo](debate-2-turno/) | Visualização reconstruída |

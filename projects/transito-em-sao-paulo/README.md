@@ -4,7 +4,7 @@
 
 O trânsito em São Paulo visto pela frota, pelos deslocamentos e pelas mortes no trânsito.
 
-**Edição publicada** · Publicação histórica com fontes preservadas
+**Edição publicada** · Visualização reconstruída
 
 
 
@@ -16,6 +16,7 @@ O trânsito em São Paulo visto pela frota, pelos deslocamentos e pelas mortes n
 - [Página publicada](index.html)
 - [dados.json](dados.json)
 - [media](media/)
+- [view.js](view.js)
 
 ## Executar
 
