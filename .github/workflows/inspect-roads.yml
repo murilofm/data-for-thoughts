@@ -23,13 +23,16 @@ jobs:
           print('Table keys',sorted(set(re.findall(r'<(?:th|b|td|strong)>\s*([\w /().²%-]{1,35})\s*[:<]',page,re.I)))[:150])
           from collections import Counter
           print('JavaScript keys',Counter(re.findall(r"""['"]([a-zA-Z_][a-zA-Z0-9_. -]{1,19})['"]\s*:""",page)).most_common(100))
-          def neutral(line):
-              line=re.sub(r'https?://[^\s\x22\x27<>]+','URL',line,flags=re.I)
-              line=re.sub(r'[a-zA-Z0-9_-]{20,}', 'LONG',line)
-              return re.sub(r'\s+', ' ',line)[:640]
-          for line in page.splitlines():
-              if any(t in line for t in ('var ', 'LatLng(', 'setIcon', 'Marker(', 'data.frame','FeatureCollection')):
-                  print('Shape',neutral(line))
-                  if 'LatLng(' in line or len(line)>3000: break
-          geoindex=page.find('FeatureCollection')
-          if geoindex>=0: print('Feature schema',neutral(page[geoindex:geoindex+640]))
+          import hashlib,html
+          print('Snapshot digest',hashlib.sha256(raw).hexdigest())
+          markers=re.split(r'new\s+google\.maps\.Marker\(\{',page)[1:]
+          print('Marker count',len(markers))
+          whitelist=['position','icon','map','title','content','description','infowindow','setContent','onclick','addListener','src','table','th','td','br','img','b','strong','acidentes','rodovia','trecho','classe','gravidade','risco','início','inicio','fim','km','PNV','UF','BR','taxa','extensão','extensao','médio','grave','baixo','alto','media','média','green','yellow','red','orange','blue']
+          for term in whitelist:
+              count=sum(bool(re.search(r'(?<!\w)'+re.escape(term)+r'(?!\w)',html.unescape(block),re.I)) for block in markers)
+              if count: print('Known token',term,count)
+          print('Recognized icon file identifiers',Counter(re.findall(r'icon[_-](\d{1,2})\.png',page,re.I)))
+          print('Google Maps standard icon colors',Counter(re.findall(r'(blue|orange|green|red|yellow)\.png',page,re.I)))
+          print('Marker field vocabulary',Counter(k for block in markers for k in whitelist if re.search(r'\b'+re.escape(k)+r'\s*:',block,re.I)))
+          numeric_only=re.compile(r'<td[^>]*>\s*(-?\d{1,7}(?:[.,]\d{1,8})?)\s*</td>',re.I)
+          print('Numeric cells per marker',Counter(len(numeric_only.findall(block)) for block in markers).most_common(10))
