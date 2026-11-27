@@ -22,12 +22,15 @@
 <section class="paper methods" aria-labelledby="od-title">
 <h2 id="od-title">Menos moradores, mais viagens de carro?</h2>
 <p>A Bela Vista perdeu 13,6% dos moradores entre os censos de 2010 e 2022. Mesmo assim, a Pesquisa Origem e Destino estimou 7,7% mais viagens de carro saindo do distrito em um dia útil de 2023 do que em 2017. No Cambuci aconteceu o inverso. A população cresceu 22,2% e as viagens ao volante caíram 37,0%.</p>
+<link rel="stylesheet" href="./mobilidade.css">
 <figure id="od-chart" hidden>
-<p>Cada ponto é um distrito. Os 12 em laranja perderam moradores e tiveram aumento estimado de viagens ao volante. Selecione um ponto ou procure um distrito na lista.</p>
-<svg viewBox="0 0 570 330" style="width:100%;height:auto" role="img" aria-label="Variação percentual de moradores no eixo horizontal e de viagens ao volante no vertical"></svg>
-<label>Distrito <select aria-label="Distrito no gráfico de mobilidade"></select></label>
+<h3>12 distritos perderam moradores e ganharam viagens ao volante</h3>
+<p class="od-key">Os pontos laranja mostram esses 12 distritos. Cada ponto representa um dos 96 distritos da capital.</p>
+<svg role="group" aria-label="Variação de moradores e viagens ao volante por distrito"></svg>
+<div class="od-picker"><label>Buscar distrito<input type="search" placeholder="Digite parte do nome" autocomplete="off"></label><label>Selecionar distrito<select></select></label></div>
+<div class="od-tip" role="tooltip" hidden></div>
 <figcaption aria-live="polite"></figcaption></figure>
-<p>A pesquisa conta viagens pelo local de partida. Uma pessoa que mora no Cambuci e volta para casa de carro depois do trabalho na Bela Vista entra na conta da Bela Vista nessa volta. As duas pesquisas cobrem períodos diferentes, e pequenas diferenças entre estimativas podem refletir variação amostral.</p>
+<p class="od-method"><strong>Como ler.</strong> O Censo conta moradores em 2010 e 2022. A Pesquisa Origem e Destino do Metrô estima viagens em dias úteis em 2017 e 2023, pelo distrito de partida. Quem mora no Cambuci e dirige da Bela Vista para casa conta como uma partida da Bela Vista. Pequenas diferenças podem refletir variação amostral. As tabelas utilizadas não informam a margem de erro por distrito e modo.</p>
 <h3>E o congestionamento?</h3>
 <p>Na cidade inteira, a média anual da extensão máxima de lentidão no pico da tarde em dias úteis passou de 665 km em 2022 para 805 km em 2025. Em 2019, chegava a 1.079 km. Para saber se uma rua da Bela Vista ficou mais lenta, seria preciso comparar velocidades no mesmo trecho e horário.</p>
 <div class="linkline"><a href="https://www.metro.sp.gov.br/pesquisa-od/">Pesquisa Origem e Destino</a><a href="https://prefeitura.sp.gov.br/web/licenciamento/w/desenvolvimento_urbano/dados_estatisticos/info_cidade/ambiente_construido/transportes/260371">Tabelas por distrito · Infocidade</a><a href="./mobilidade.csv" download>Baixar viagens por distrito</a><a href="https://www.cetsp.com.br/media/1694993/relatorio-da-administracao-cet-2025-20marco2026-.pdf">Série de lentidão · CET</a></div>
