@@ -14,6 +14,7 @@ Uma leitura das despesas federais por função a partir dos dados do Siga Brasil
 - [Texto, figuras e links preservados](post.json)
 - [Configuração editorial](project.json)
 - [Página publicada](index.html)
+- [dados.json](dados.json)
 - [media](media/)
 
 ## Executar

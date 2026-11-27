@@ -14,6 +14,7 @@ O trânsito em São Paulo visto pela frota, pelos deslocamentos e pelas mortes n
 - [Texto, figuras e links preservados](post.json)
 - [Configuração editorial](project.json)
 - [Página publicada](index.html)
+- [dados.json](dados.json)
 - [media](media/)
 
 ## Executar
