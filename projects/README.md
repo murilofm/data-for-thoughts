@@ -20,9 +20,9 @@ Cada publicação tem sua própria página, fontes e arquivos de análise.
 | 2014-01-08 | [Acidentes nas rodovias federais](acidentes-nas-rodovias-federais/) | Publicação histórica com fontes preservadas |
 | 2013-12-26 | [Séries Temporais do Bacen no Excel](series-temporais-bacen/) | Visualização reconstruída |
 | 2013-12-17 | [Mapa das subprefeituras no Excel](mapa-das-subprefeituras-no-excel/) | Visualização reconstruída |
-| 2013-12-11 | [Passo-a-Passo: Infográfico Aeroportos](passo-a-passo-aeroportos/) | Publicação histórica com fontes preservadas |
+| 2013-12-11 | [Passo-a-Passo: Infográfico Aeroportos](passo-a-passo-aeroportos/) | Visualização reconstruída |
 | 2013-12-04 | [Mais sobre aeroportos](mais-sobre-aeroportos/) | Referência comentada |
-| 2013-12-03 | [Aeroportos, partidas e retornos](aeroportos-partidas-e-retornos/) | Publicação histórica com fontes preservadas |
+| 2013-12-03 | [Aeroportos, partidas e retornos](aeroportos-partidas-e-retornos/) | Visualização reconstruída |
 | 2012-11-07 | [Eleição presidencial americana: previsão vs realidade](eleicao-americana-presidencial-previsao-vs-realidade/) | Referência comentada |
 | 2012-11-05 | [Veículos em São Paulo](transito-em-sao-paulo/) | Visualização reconstruída |
 | 2012-10-31 | [Artilheiros do Campeonato Brasileiro (2010-2012)](artilheiros-campeonato-brasileiro/) | Visualização reconstruída |

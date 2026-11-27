@@ -17,6 +17,8 @@ O recorte distrital permite comparar os censos de 2010 e 2022. A escala dos seto
 - [build-setores.py](build-setores.py)
 - [distritos-densidade.json](distritos-densidade.json)
 - [media](media/)
+- [setores-2010.json](setores-2010.json)
+- [setores-2010.png](setores-2010.png)
 - [view.js](view.js)
 
 ## Executar

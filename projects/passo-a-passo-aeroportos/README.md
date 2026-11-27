@@ -4,7 +4,7 @@
 
 O passo a passo do coletor que transformou os boletins da Infraero em uma série histórica.
 
-**Edição publicada** · Publicação histórica com fontes preservadas
+**Edição publicada** · Visualização reconstruída
 
 
 
@@ -14,7 +14,10 @@ O passo a passo do coletor que transformou os boletins da Infraero em uma série
 - [Texto, figuras e links preservados](post.json)
 - [Configuração editorial](project.json)
 - [Página publicada](index.html)
+- [boletim-2013-11-29-15h.html.txt](boletim-2013-11-29-15h.html.txt)
+- [extrair.py](extrair.py)
 - [media](media/)
+- [view.js](view.js)
 
 ## Executar
 

@@ -4,7 +4,7 @@
 
 Como os atrasos se distribuíam entre aeroportos brasileiros ao longo do dia?
 
-**Edição publicada** · Publicação histórica com fontes preservadas
+**Edição publicada** · Visualização reconstruída
 
 
 
@@ -14,7 +14,10 @@ Como os atrasos se distribuíam entre aeroportos brasileiros ao longo do dia?
 - [Texto, figuras e links preservados](post.json)
 - [Configuração editorial](project.json)
 - [Página publicada](index.html)
+- [boletins.csv](boletins.csv)
+- [geografia.json](geografia.json)
 - [media](media/)
+- [view.js](view.js)
 
 ## Executar
 

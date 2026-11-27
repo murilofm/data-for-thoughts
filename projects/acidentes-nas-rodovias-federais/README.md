@@ -14,7 +14,9 @@ Um mapa procura as concentrações de acidentes em rodovias federais em 2012.
 - [Texto, figuras e links preservados](post.json)
 - [Configuração editorial](project.json)
 - [Página publicada](index.html)
+- [build.py](build.py)
 - [media](media/)
+- [trechos-2012.json](trechos-2012.json)
 
 ## Executar
 

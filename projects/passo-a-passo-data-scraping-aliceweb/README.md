@@ -14,6 +14,7 @@ O que era preciso fazer para extrair os dados brasileiros de comércio exterior 
 - [Texto, figuras e links preservados](post.json)
 - [Configuração editorial](project.json)
 - [Página publicada](index.html)
+- [comex.py](comex.py)
 - [media](media/)
 
 ## Executar
